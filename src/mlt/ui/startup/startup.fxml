@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="400.0" maxWidth="700.0" minHeight="400.0" minWidth="700.0" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mlt.ui.startup.StartupController">
+   <children>
+      <ImageView fitHeight="620.0" fitWidth="708.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/bg4.png" />
+         </image>
+         <effect>
+            <BoxBlur height="2.0" iterations="3" width="2.0" />
+         </effect>
+      </ImageView>
+      <BorderPane fx:id="mainborderpane" maxHeight="400.0" maxWidth="700.0" minHeight="400.0" minWidth="700.0" prefHeight="400.0" prefWidth="700.0">
+         <center>
+            <AnchorPane maxHeight="400.0" maxWidth="700.0" minHeight="400.0" minWidth="700.0" prefHeight="400.0" prefWidth="700.0">
+               <children>
+                  <Label fx:id="lblmltheader" alignment="CENTER" layoutX="63.0" layoutY="44.0" style="-fx-text-fill: #000;" styleClass="header" text="Merit List &amp; Time Table Generator (MLT) System" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lblopening" layoutX="318.0" layoutY="116.0" text="Openning ..." AnchorPane.bottomAnchor="267.0" AnchorPane.rightAnchor="318.0" />
+                  <JFXButton layoutX="541.0" layoutY="322.0" onAction="#loginAdmin" prefHeight="33.0" prefWidth="137.0" styleClass="acentbtn" text="Login as Admin" AnchorPane.leftAnchor="541.0" AnchorPane.rightAnchor="39.0" AnchorPane.topAnchor="322.0">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="12.0" />
+                     </font></JFXButton>
+                  <JFXButton layoutX="382.0" layoutY="322.0" onAction="#loginTeacher" prefHeight="33.0" prefWidth="137.0" styleClass="acentbtn" text="Login as Teacher" AnchorPane.leftAnchor="382.0" AnchorPane.rightAnchor="198.0" AnchorPane.topAnchor="322.0">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="12.0" />
+                     </font></JFXButton>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+   <stylesheets>
+      <URL value="@../style/newStyle.css" />
+      <URL value="@../style/common.css" />
+      <URL value="@../style/style.css" />
+   </stylesheets>
+</StackPane>

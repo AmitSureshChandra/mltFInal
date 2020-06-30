@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane minHeight="650.0" minWidth="1100.0" prefHeight="447.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mlt.ui.adminpanel.AdminpageController">
+   <center>
+      <AnchorPane prefHeight="624.0" prefWidth="1102.0">
+         <children>
+            <AnchorPane layoutX="39.0" layoutY="-4.0" prefHeight="340.0" prefWidth="1122.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-21.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <JFXButton buttonType="RAISED" layoutX="677.0" layoutY="27.0" onAction="#logout" prefHeight="27.0" prefWidth="101.0" ripplerFill="#0d1d75" style="-fx-border-color: #111;" text="Logout" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="27.0">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="13.0" />
+                     </font>
+                     <effect>
+                        <Glow />
+                     </effect>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="SEARCH" size="20" />
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Empty Tooltip" />
+                     </tooltip>
+                  </JFXButton>
+                  <AnchorPane layoutX="23.0" layoutY="17.0" prefHeight="88.0" prefWidth="754.0" style="-fx-background-color: #111; -fx-border-color: #666;" visible="false" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="17.0">
+                     <children>
+                        <Label fx:id="lblusername" alignment="CENTER" contentDisplay="TOP" layoutY="6.0" styleClass="header" text="AdminName" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="6.0">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="USER_CIRCLE_ALT" size="40" text="" wrappingWidth="38.0" />
+                           </graphic></Label>
+                        <Label fx:id="lbluserdata" layoutX="140.0" layoutY="16.0" prefHeight="63.0" prefWidth="309.0" text="Database Admin&#10;- IT Department Head&#10;- TYBscIT HOD" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="139.0" AnchorPane.topAnchor="15.0">
+                           <font>
+                              <Font name="Consolas Bold" size="14.0" />
+                           </font></Label>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </AnchorPane>
+                  <FlowPane alignment="CENTER" layoutX="254.0" layoutY="109.0" prefHeight="140.0" prefWidth="1076.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="130.0">
+                     <children>
+                        <AnchorPane prefHeight="140.0" prefWidth="160.0">
+                           <children>
+                              <JFXButton contentDisplay="TOP" layoutY="-1.0" onAction="#manageTeacher" prefHeight="60.0" prefWidth="60.0" style="-fx-border-color: #444;" text="Manage Teacher" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="USER_ALT" size="35" wrappingWidth="42.28571319580078" />
+                                 </graphic>
+                                 <tooltip>
+                                    <Tooltip text="To manage All Teacher" />
+                                 </tooltip>
+                                 <font>
+                                    <Font name="Courier New Bold" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                           <FlowPane.margin>
+                              <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                           </FlowPane.margin>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="140.0" prefWidth="160.0">
+                           <children>
+                              <JFXButton contentDisplay="TOP" layoutY="-1.0" onAction="#timeTable" prefHeight="60.0" prefWidth="60.0" style="-fx-border-color: #444;" text="Time Table" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="CALENDAR_ALT" size="35" wrappingWidth="42.28571319580078" />
+                                 </graphic>
+                                 <font>
+                                    <Font name="Courier New Bold" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                           <FlowPane.margin>
+                              <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                           </FlowPane.margin>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="140.0" prefWidth="160.0">
+                           <children>
+                              <JFXButton contentDisplay="TOP" layoutY="-1.0" onAction="#manageSubject" prefHeight="60.0" prefWidth="60.0" style="-fx-border-color: #444;" text="Manage Subject" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="CLIPBOARD" size="35" wrappingWidth="42.28571319580078" />
+                                 </graphic>
+                                 <tooltip>
+                                    <Tooltip text="To Manage the Subjects" />
+                                 </tooltip>
+                                 <font>
+                                    <Font name="Courier New Bold" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                           <FlowPane.margin>
+                              <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                           </FlowPane.margin>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="140.0" prefWidth="160.0">
+                           <children>
+                              <JFXButton contentDisplay="TOP" layoutY="-1.0" onAction="#meritList" prefHeight="60.0" prefWidth="60.0" style="-fx-border-color: #444;" text="Merit List" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="COLUMNS" size="35" wrappingWidth="42.28571319580078" />
+                                 </graphic>
+                                 <tooltip>
+                                    <Tooltip text="Empty Tooltip" />
+                                 </tooltip>
+                                 <font>
+                                    <Font name="Courier New Bold" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                           <FlowPane.margin>
+                              <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                           </FlowPane.margin>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="140.0" prefWidth="160.0">
+                           <children>
+                              <JFXButton contentDisplay="TOP" layoutY="-1.0" onAction="#ManageCourse" prefHeight="60.0" prefWidth="60.0" style="-fx-border-color: #444;" text="Manage Courses" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="MORTAR_BOARD" size="35" wrappingWidth="42.28571319580078" />
+                                 </graphic>
+                                 <font>
+                                    <Font name="Courier New Bold" size="14.0" />
+                                 </font>
+                                 <tooltip>
+                                    <Tooltip text="Manage the Corses" />
+                                 </tooltip>
+                              </JFXButton>
+                           </children>
+                           <FlowPane.margin>
+                              <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                           </FlowPane.margin>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="140.0" prefWidth="160.0">
+                           <children>
+                              <JFXButton contentDisplay="TOP" layoutY="-1.0" onAction="#settings" prefHeight="140.0" prefWidth="160.0" style="-fx-border-color: #444;" text="Settings" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="GEARS" size="35" wrappingWidth="42.28571319580078" />
+                                 </graphic>
+                                 <tooltip>
+                                    <Tooltip text="Empty Tooltip" />
+                                 </tooltip>
+                                 <font>
+                                    <Font name="Courier New Bold" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                           <FlowPane.margin>
+                              <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                           </FlowPane.margin>
+                        </AnchorPane>
+                     </children>
+                  </FlowPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="11.0" prefHeight="321.0" prefWidth="1111.0" style="-fx-border-color: #111; -fx-border-width: 5px;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                   <Label layoutX="5.0" layoutY="40.0" style="-fx-padding:10;" text="TYBscIT Merit List created at 12th Dec 2019        --  Created By HOD Ma'am" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="40.0">
+                     <font>
+                        <Font name="Consolas Bold" size="13.0" />
+                     </font></Label>
+                   <Label layoutX="5.0" layoutY="70.0" style="-fx-padding:10;" text="TYBscIT Time Table created at 12th Dec 2019        --  Created By HOD Ma'am" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="70.0">
+                     <font>
+                        <Font name="Consolas Bold" size="13.0" />
+                     </font></Label>
+                   <Label layoutX="5.0" layoutY="105.0" prefHeight="34.0" prefWidth="497.0" style="-fx-padding:10;" text="BscIT Course Added                                 --  Created By HOD Ma'am" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="105.0">
+                     <font>
+                        <Font name="Consolas Bold" size="13.0" />
+                     </font></Label>
+                  <Label graphicTextGap="10.0" layoutX="15.0" layoutY="6.0" text="History : - " wrapText="true">
+                     <font>
+                        <Font name="Consolas Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="CHECK_SQUARE_ALT" />
+                     </graphic></Label>
+                  <Line endX="-47.0416259765625" layoutX="115.0" layoutY="30.0" startX="-100.0" stroke="#3939ff" />
+                  <Line endX="-47.0416259765625" layoutX="116.0" layoutY="27.0" startX="-100.0" stroke="#3939ff" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+   <stylesheets>
+      <URL value="@../style/common.css" />
+      <URL value="@../style/style.css" />
+   </stylesheets>
+</BorderPane>

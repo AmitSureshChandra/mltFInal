@@ -1,0 +1,344 @@
+
+*{
+    -fx-primary : #000 ;
+
+    /*-fx-primary : #2B2B2B ;*/
+    -fx-secondary : #0078d7;
+    -fx-a : #a2d729;
+    -fx-primarytext : #fff;
+    -fx-red : #cc2900;
+    -fx-white : #fff;
+
+    -fx-dark : #222;
+    -fx-prompt-text-fill :  derive(-fx-primarytext,-30%);
+    -fx-yellow: #e2ba67;
+}
+
+.root{
+    -fx-background-color:  -fx-dark;
+}
+
+.glyph-icon{
+    -fx-fill:   -fx-primarytext;
+}
+.glyph-icon:hover{
+    -fx-fill: -fx-secondary;
+}
+
+.button{
+    -fx-text-fill: -fx-primarytext;
+}
+
+/* css for login */
+
+.login-button{
+    -fx-border-color:  -fx-secondary ;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.login-button:hover{
+    -fx-border-color:  -fx-secondary ;
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+    -fx-fill: -fx-white;
+}
+
+.login-button:hover .glyph-icon{
+    -fx-fill: -fx-a;
+}
+
+.text-field,.text-area{
+    -fx-text-fill: -fx-primarytext;
+    -fx-font-size: 12px;
+    -jfx-focus-color : -fx-secondary;
+
+    -jfx-unfocus-color : -fx-white ;
+    -jfx-font: 1em Arial, sans-serif;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-weight: bold;
+}
+
+.jfx-text-field,.jfx-password-field
+{
+    -fx-prompt-text-fill :  derive(-fx-primarytext,-30%);
+}
+
+.wrong-credential{
+    -jfx-focus-color : -fx-red;
+    -jfx-unfocus-color : -fx-red;
+}
+
+.label
+{
+    -fx-text-fill: -fx-white;
+
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+/*  css for main */
+
+/* tab styling */
+
+.tab{
+    -fx-pref-width: 200px;
+    -fx-pref-height: 60px;
+    -fx-background-color: -fx-primary;
+    -fx-font-family: "Consolas";
+
+}
+
+.tab-header-background
+{
+    -fx-background-color: -fx-primary;
+}
+/* menu bar meritlist.style */
+
+.menu-bar
+{
+    -fx-base : -fx-primary;
+    -fx-background-color: derive(-fx-primary,7%);
+    -fx-font-family: "Consolas";
+}
+
+.context-menu
+{
+    -fx-background-color: derive(-fx-primary,30%);
+    /*  in % value : -ve to make darker and +ve to make lighter */
+}
+
+/* table styling */
+/*.table-view*/
+/*{*/
+    /*-fx-base : -fx-primary;*/
+    /*-fx-border-color: derive(-fx-primary,40%);*/
+/*}*/
+/*.table-cell*/
+/*{*/
+    /*-fx-base : -fx-primary;*/
+    /*-fx-background-color: -fx-dark ;*/
+    /*!*-fx-pref-width: 200px;*!*/
+    /*-fx-text-fill: -fx-primarytext;*/
+
+/*}*/
+.column-header
+{
+    /*-fx-base : -fx-primary;*/
+    /*-fx-pref-width: 200px;*/
+    -fx-font-family: "Consolas";
+    -fx-font-weight: bolder;
+    -fx-font-size: 16px;
+    /*-fx-text-fill: -fx-primarytext;*/
+
+}
+
+.table-view .column-header .label {
+    -fx-font-family: Constantia;
+    -fx-text-fill: -fx-a;
+    -fx-font-weight: bold;
+    -fx-border: -fx-primary;
+    -fx-font-size: 14px;
+}
+
+.list-view .label,.list-cell .label{
+    -fx-text-fill: -fx-a;
+    -fx-font-weight: bold;
+}
+
+/*#tbltimetable.column-header*/
+/*{*/
+/*    -fx-base : -fx-primary;*/
+/*    -fx-pref-width: 100px;*/
+/*    -fx-font-family: "Consolas";*/
+/*    -fx-font-size: 16px;*/
+/*    -fx-text-fill: -fx-primarytext;*/
+/*    -fx-text-fill: -fx-secondary;*/
+/*}*/
+/*#tbltimetable.table-cell{*/
+    /*-fx-pref-width: 120px;*/
+/*}*/
+
+.list-tables
+{
+    -fx-background-color: -fx-dark;
+}
+/*.table-row-cell*/
+/*{*/
+    /*-fx-background-color: -fx-dark;*/
+    /*-fx-text-alignment: center;*/
+/*}*/
+.table-column
+{
+    -fx-alignment: center ;
+    -fx-font-weight: bold;
+
+
+    -fx-fill: -fx-primary;
+    -fx-border-width: 1 1px;
+    -fx-border-color: derive(-fx-primary,20%);
+}
+
+/* radio styling */
+
+.radio-button
+{
+    -fx-text-fill: -fx-primarytext;
+}
+
+/* for custom listing books,members and issued */
+.list-cell
+{
+    -fx-background-color: -fx-dark;
+    -fx-text-fill: -fx-primarytext;
+    -fx-font-family: Consolas;
+}
+/* for combobox in search tab pane */
+.jfx-combo-box{
+    -jfx-focus-color: -fx-secondary;
+    -jfx-prompt-text-fill : -fx-secondary;
+}
+
+.jfx-combo-box .prompt-text{
+    -jfx-focus-color: -fx-secondary;
+    -jfx-prompt-text-fill : -fx-secondary;
+    -fx-fill: derive(-fx-primarytext,-30%);
+    -fx-font-size: 14px;
+}
+
+
+/* toolbox button*/
+
+.toolbutton
+{
+    -fx-font-family: "Comic Sans MS";
+    -fx-background-color:  -fx-dark;
+
+}
+
+.toolbutton:hover
+ {
+     -fx-font-family: "Consolas";
+     -fx-background-color: derive(-fx-primary,-90%);
+     -fx-text-fill : -fx-white;
+     -fx-font-size: 16px;
+ }
+.toolbutton:hover .glyph-icon
+{
+    -fx-fill :-fx-secondary;
+}
+/*jfxhamburger*/
+
+.jfx-hamburger-icon
+{
+    -fx-spacing: 5;
+
+}
+.jfx-hamburger-icon StackPane
+{
+    -fx-background-color: -fx-secondary;
+}
+
+#toolbar
+{
+    -fx-background-color:  -fx-dark;
+}
+
+.jfx-drawer-side-pane
+{
+    -fx-background-color:  -fx-dark;
+}
+
+#admindatalist
+{
+    -fx-text-fill:-fx-white;
+}
+
+.alert-label
+{
+
+}
+
+/*  library header */
+
+.header
+{
+    -fx-font-family: Consolas;
+    -fx-font-size: 25px;
+    -fx-text-fill: derive(-fx-white,10%);
+}
+
+.label_alert
+{
+    -fx-text-fill: #000;
+}
+
+.border
+{
+    -fx-border-color: -fx-secondary;
+    -fx-border-width: 1px;
+}
+
+.h3{
+    -fx-font-size: 20px;
+}
+
+.border
+{
+    -fx-border-color: -fx-secondary;
+    -fx-border-width: 1px;
+}
+
+.theme1
+{
+    -fx-secondary : #0078d7;
+}
+
+.theme2{
+    -fx-secondary : #7b1cd7;
+}
+
+
+
+.theme3{
+    -fx-secondary : #1dd724;
+}
+
+
+.theme4{
+    -fx-secondary : #d7111e;
+}
+
+
+.theme5{
+    -fx-secondary : #d79811;
+}
+
+.toggle-button{
+    -fx-text-fill: -fx-white;
+    -fx-font-family: "Constantia";
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.acentbtn{
+    -fx-background-color:  -fx-secondary;
+    -fx-text-fill: -fx-primary;
+    -fx-font-family: "Constantia";
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.acentbtn .glymph-icon{
+    -fx-fill: -fx-primary;
+    -fx-text-fill: -fx-primary;
+}
+
+
+.circleBorder{
+    -fx-border-color: -fx-primary;
+}

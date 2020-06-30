@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane minHeight="650.0" minWidth="1100.0" prefHeight="650.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mlt.ui.teacher.TeacherController">
+   <center>
+      <JFXTabPane>
+         <tabs>
+            <Tab closable="false" text="Manage Teacher">
+               <content>
+                  <AnchorPane fx:id="anchorcenter" prefHeight="650.0" prefWidth="1034.0">
+                     <children>
+                        <AnchorPane maxWidth="300.0" minWidth="300.0" prefHeight="417.0" prefWidth="300.0" style="-fx-border-color: #444; -fx-border-width: 0 1 0 0;" styleClass="bg-info" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <JFXComboBox fx:id="cbcourse" labelFloat="true" layoutX="62.0" layoutY="32.0" prefHeight="35.0" prefWidth="183.0" promptText="Select Course" styleClass="prompt-text" AnchorPane.leftAnchor="62.0" AnchorPane.topAnchor="32.0" />
+                              <JFXTextField fx:id="txtteachername" labelFloat="true" layoutX="52.0" layoutY="146.0" prefHeight="26.0" prefWidth="200.0" promptText="Teacher name" AnchorPane.leftAnchor="52.0" AnchorPane.topAnchor="86.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="13.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtteacherid" labelFloat="true" layoutX="54.0" layoutY="151.0" prefHeight="26.0" prefWidth="200.0" promptText="Teacher ID" AnchorPane.leftAnchor="54.0" AnchorPane.topAnchor="151.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="13.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtteacherpost" labelFloat="true" layoutX="54.0" layoutY="216.0" prefHeight="26.0" prefWidth="200.0" promptText="Teacher Post" AnchorPane.leftAnchor="54.0" AnchorPane.topAnchor="216.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="13.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXComboBox fx:id="cbexp" editable="true" labelFloat="true" layoutX="62.0" layoutY="279.0" prefHeight="35.0" prefWidth="183.0" promptText="Experience" styleClass="prompt-text" AnchorPane.leftAnchor="62.0" AnchorPane.topAnchor="279.0" />
+                              <JFXButton buttonType="RAISED" layoutX="106.0" layoutY="421.0" onAction="#cancel" prefHeight="38.0" prefWidth="146.0" ripplerFill="#0d1d75" text="Clear" AnchorPane.topAnchor="421.0">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="13.0" />
+                                 </font>
+                                 <effect>
+                                    <Glow />
+                                 </effect>
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="CLOSE" size="20" />
+                                 </graphic>
+                                 <styleClass>
+                                    <String fx:value="login-button" />
+                                    <String fx:value="btn-default" />
+                                 </styleClass>
+                              </JFXButton>
+                              <JFXButton fx:id="btnaddteacher" buttonType="RAISED" layoutX="104.0" layoutY="484.0" onAction="#addTeacher" prefHeight="38.0" prefWidth="146.0" ripplerFill="#0d1d75" text="Add Teacher" AnchorPane.topAnchor="484.0">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="13.0" />
+                                 </font>
+                                 <effect>
+                                    <Glow />
+                                 </effect>
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="PLUS_SQUARE" size="20" />
+                                 </graphic>
+                                 <styleClass>
+                                    <String fx:value="login-button" />
+                                    <String fx:value="btn-default" />
+                                 </styleClass>
+                              </JFXButton>
+                              <JFXButton fx:id="btnupdateteacher" buttonType="RAISED" layoutX="104.0" layoutY="484.0" onAction="#EditTeacher" prefHeight="38.0" prefWidth="146.0" ripplerFill="#0d1d75" text="Update Teacher">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="13.0" />
+                                 </font>
+                                 <effect>
+                                    <Glow />
+                                 </effect>
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="EDIT" size="20" />
+                                 </graphic>
+                                 <styleClass>
+                                    <String fx:value="login-button" />
+                                    <String fx:value="btn-default" />
+                                 </styleClass>
+                              </JFXButton>
+                              <JFXButton fx:id="btnremoveteacher" buttonType="RAISED" layoutX="104.0" layoutY="544.0" onAction="#removeTeacher" prefHeight="38.0" prefWidth="146.0" ripplerFill="#0d1d75" text="Remove Teacher">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="13.0" />
+                                 </font>
+                                 <effect>
+                                    <Glow />
+                                 </effect>
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="EXCLAMATION_CIRCLE" size="20" />
+                                 </graphic>
+                                 <styleClass>
+                                    <String fx:value="login-button" />
+                                    <String fx:value="btn-default" />
+                                 </styleClass>
+                              </JFXButton>
+                              <JFXButton alignment="BASELINE_LEFT" layoutX="62.0" layoutY="346.0" text="submit more details" visible="false" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane maxHeight="50.0" minHeight="100.0" minWidth="800.0" prefHeight="50.0" prefWidth="958.0" styleClass="bg-info" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <JFXComboBox fx:id="cbcourse2" labelFloat="true" layoutX="20.0" layoutY="40.0" prefHeight="30.0" prefWidth="122.0" promptText="Select Course" styleClass="prompt-text" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="40.0" />
+                              <JFXTextField fx:id="txtsearchteacher" labelFloat="true" layoutX="150.0" layoutY="40.0" onAction="#search" prefHeight="30.0" prefWidth="147.0" promptText="Search Teacher" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="40.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="13.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXComboBox fx:id="cbsearch" labelFloat="true" layoutX="311.0" layoutY="40.0" prefHeight="30.0" prefWidth="122.0" promptText="Search Criteria" styleClass="prompt-text" AnchorPane.leftAnchor="311.0" AnchorPane.topAnchor="40.0" />
+                              <JFXButton buttonType="RAISED" layoutX="458.0" layoutY="36.0" onAction="#search" prefHeight="38.0" prefWidth="102.0" ripplerFill="#0d1d75" text="Search" AnchorPane.rightAnchor="240.0" AnchorPane.topAnchor="36.0">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="13.0" />
+                                 </font>
+                                 <effect>
+                                    <Glow />
+                                 </effect>
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="SEARCH" size="20" />
+                                 </graphic>
+                                 <styleClass>
+                                    <String fx:value="login-button" />
+                                    <String fx:value="btn-default" />
+                                 </styleClass>
+                              </JFXButton>
+                              <JFXButton buttonType="RAISED" layoutX="599.0" layoutY="36.0" onAction="#searchAll" prefHeight="38.0" prefWidth="157.0" ripplerFill="#0d1d75" text="List All Teachers" AnchorPane.rightAnchor="44.0" AnchorPane.topAnchor="36.0">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="13.0" />
+                                 </font>
+                                 <effect>
+                                    <Glow />
+                                 </effect>
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="USER" size="20" />
+                                 </graphic>
+                                 <styleClass>
+                                    <String fx:value="login-button" />
+                                    <String fx:value="btn-default" />
+                                 </styleClass>
+                              </JFXButton>
+                              <JFXButton buttonType="RAISED" layoutX="688.0" layoutY="36.0" onAction="#print" prefHeight="38.0" prefWidth="83.0" ripplerFill="#0d1d75" text="Print" visible="false" AnchorPane.rightAnchor="29.0" AnchorPane.topAnchor="36.0">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="13.0" />
+                                 </font>
+                                 <effect>
+                                    <Glow />
+                                 </effect>
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="PRINT" size="20" />
+                                 </graphic>
+                                 <styleClass>
+                                    <String fx:value="login-button" />
+                                    <String fx:value="btn-default" />
+                                 </styleClass>
+                              </JFXButton>
+                           </children>
+                        </AnchorPane>
+                        <TableView fx:id="tblteacher" editable="true" minHeight="468.0" onMouseClicked="#loadTeacherRecord" prefHeight="468.0" prefWidth="802.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+                           <columns>
+                              <TableColumn fx:id="coltid" prefWidth="123.0" text="Teacher ID" />
+                              <TableColumn fx:id="coltname" prefWidth="123.0" text="Teachar Name" />
+                              <TableColumn fx:id="coltpost" prefWidth="123.0" text="Teacher Post" />
+                              <TableColumn fx:id="colexp" prefWidth="123.0" text="Experience" />
+                              <TableColumn fx:id="colcourse" prefWidth="123.0" text="Course" />
+                           </columns>
+                           <styleClass>
+                              <String fx:value="root" />
+                              <String fx:value="bg-success" />
+                           </styleClass>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+               <graphic>
+                  <FontAwesomeIconView glyphName="USER" size="20" />
+               </graphic>
+            </Tab>
+            <Tab text="Select Subject">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane prefHeight="617.0" prefWidth="300.0" style="-fx-border-color: #444; -fx-border-width: 0 1 0 0;" styleClass="bg-info" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <JFXComboBox fx:id="cbscourse2" labelFloat="true" layoutX="54.0" layoutY="70.0" onAction="#loadTeacherName" prefHeight="30.0" prefWidth="200.0" promptText="Select Course" styleClass="prompt-text" AnchorPane.leftAnchor="54.0" AnchorPane.topAnchor="70.0" />
+                              <JFXComboBox fx:id="cbclass2" labelFloat="true" layoutX="53.0" layoutY="135.0" onAction="#loadTeacherName" prefHeight="30.0" prefWidth="200.0" promptText="Select Class" styleClass="prompt-text" AnchorPane.leftAnchor="53.0" AnchorPane.topAnchor="135.0" />
+                              <JFXComboBox fx:id="cbteacher2" labelFloat="true" layoutX="53.0" layoutY="196.0" prefHeight="30.0" prefWidth="200.0" promptText="Select Teacher Name" styleClass="prompt-text" AnchorPane.leftAnchor="53.0" AnchorPane.topAnchor="196.0" />
+                              <JFXComboBox fx:id="cbsubject2" labelFloat="true" layoutX="53.0" layoutY="256.0" prefHeight="30.0" prefWidth="200.0" promptText="Select Subject Name" styleClass="prompt-text" AnchorPane.leftAnchor="53.0" AnchorPane.topAnchor="256.0" />
+                              <JFXButton fx:id="btnclearsubject" layoutX="59.0" layoutY="367.0" onAction="#clearSubject" prefHeight="28.0" prefWidth="78.0" text="Clear" AnchorPane.rightAnchor="163.0" AnchorPane.topAnchor="367.0">
+                                 <styleClass>
+                                    <String fx:value="bg-success" />
+                                    <String fx:value="login-button" />
+                                 </styleClass>
+                              </JFXButton>
+                              <JFXButton fx:id="btndeletesubject" layoutX="162.0" layoutY="367.0" onAction="#deleteSubject" prefHeight="28.0" prefWidth="88.0" text="Delete" visible="false" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="367.0">
+                                 <styleClass>
+                                    <String fx:value="bg-success" />
+                                    <String fx:value="login-button" />
+                                 </styleClass>
+                              </JFXButton>
+                              <JFXButton fx:id="btnaddsubject" layoutX="213.0" layoutY="366.0" onAction="#addsubject" prefHeight="28.0" prefWidth="89.0" text="Add" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="367.0">
+                                 <styleClass>
+                                    <String fx:value="bg-success" />
+                                    <String fx:value="login-button" />
+                                 </styleClass>
+                              </JFXButton>
+                              <!--<JFXButton fx:id="btnupdatesubject" layoutX="213.0" layoutY="366.0" onAction="#updateSubject" prefHeight="28.0" prefWidth="89.0" text="Update" visible="false" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="367.0">-->
+                                 <!--<styleClass>-->
+                                    <!--<String fx:value="bg-success" />-->
+                                    <!--<String fx:value="login-button" />-->
+                                 <!--</styleClass></JFXButton>-->
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutY="33.0" styleClass="bg-info" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <TableView fx:id="tblSubjectTeacher" layoutY="100.0" maxWidth="800.0" minWidth="550.0" onMouseClicked="#loadTeacherSubjectRecord" prefHeight="490.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+                                <columns>
+                                  <TableColumn fx:id="colcourse2" prefWidth="139.0" text="Course Name" />
+                                  <TableColumn fx:id="colclass2" prefWidth="144.0" text="Class" />
+                                    <TableColumn fx:id="colteachername2" prefWidth="121.0" text="Teacher Name" />
+                                    <TableColumn fx:id="colsubject2" prefWidth="145.0" text="Subject Name" />
+                                </columns>
+                                 <styleClass>
+                                    <String fx:value="bg-danger" />
+                                    <String fx:value="root" />
+                                 </styleClass>
+                              </TableView>
+                              <JFXComboBox fx:id="cbcourse3" labelFloat="true" layoutX="38.0" layoutY="31.0" prefHeight="30.0" prefWidth="200.0" promptText="Select Course" styleClass="prompt-text" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="31.0" />
+                              <JFXComboBox fx:id="cbclass3" labelFloat="true" layoutX="263.0" layoutY="30.0" prefHeight="30.0" prefWidth="200.0" promptText="Select Class" styleClass="prompt-text" AnchorPane.leftAnchor="280.0" AnchorPane.topAnchor="31.0" />
+                              <JFXButton buttonType="RAISED" layoutX="495.0" layoutY="32.0" onAction="#searchSubjectTeacher" prefHeight="38.0" prefWidth="124.0" ripplerFill="#0d1d75" text="Search" AnchorPane.rightAnchor="181.0" AnchorPane.topAnchor="32.0">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="13.0" />
+                                 </font>
+                                 <effect>
+                                    <Glow />
+                                 </effect>
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="SEARCH" size="20" />
+                                 </graphic>
+                                 <styleClass>
+                                    <String fx:value="login-button" />
+                                    <String fx:value="btn-default" />
+                                 </styleClass>
+                              </JFXButton>
+                              <JFXButton buttonType="RAISED" layoutX="629.0" layoutY="32.0" onAction="#showAllSubTeacher" prefHeight="38.0" prefWidth="161.0" ripplerFill="#0d1d75" text="Show All Teachers" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="32.0">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="13.0" />
+                                 </font>
+                                 <effect>
+                                    <Glow />
+                                 </effect>
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="USER" size="20" />
+                                 </graphic>
+                                 <styleClass>
+                                    <String fx:value="login-button" />
+                                    <String fx:value="btn-default" />
+                                 </styleClass>
+                              </JFXButton>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+               <graphic>
+                  <FontAwesomeIconView glyphName="VCARD" size="20" />
+               </graphic>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </center>
+</BorderPane>

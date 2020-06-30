@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.9.0.final using JasperReports Library version 6.9.0-cb8f9004be492ccc537180b49c026951f4220bf3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="bc661d72-e17c-40c9-8364-f22f15ad6766">
+	<subDataset name="Dataset1" uuid="a4928a14-5220-49b8-ae4d-cb7ce4e8c3bd">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+	</subDataset>
+	<subDataset name="Dataset2" uuid="92b697de-a2d6-428f-9976-51f5f2e0fe4f">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+	</subDataset>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="course" class="java.lang.String"/>
+	<field name="class" class="java.lang.String"/>
+	<field name="caste" class="java.lang.String"/>
+	<field name="id" class="java.lang.String"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="marks" class="java.lang.String"/>
+	<field name="remark" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="174" splitType="Stretch">
+			<staticText>
+				<reportElement x="100" y="20" width="306" height="35" uuid="d1516cbc-9992-4229-b4ab-f6b6a8bcb072">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Constantia" size="23" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Annasaheb Vartak College]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="55" width="205" height="15" uuid="7a301d69-27f7-4667-ab00-eb4008f95f7a"/>
+				<textElement>
+					<font fontName="Consolas" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Vasai Road (W), Dist. Palghar - 401202.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="70" width="205" height="15" uuid="a00471ce-4ee4-430e-b40f-29fc3d4865ca"/>
+				<textElement>
+					<font fontName="Consolas" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Maharashtra, India]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="85" width="205" height="15" uuid="43dbfb50-30b8-462b-89de-ca6ca6d4bf1a"/>
+				<textElement>
+					<font fontName="Consolas" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Contact : +91 250 2332017,info@avc.ac.in]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="120" width="80" height="30" uuid="05da4b82-ca43-4fe9-b5f2-b79ecf6dbdd9"/>
+				<textElement textAlignment="Right">
+					<font fontName="Constantia" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Courses :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="532" y="0" width="24" height="20" uuid="7a842a19-fccb-486a-8009-94dfcdd9763d"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="201" y="120" width="79" height="30" uuid="a1166f7c-e45a-4d4a-9d80-aff39fcd825f"/>
+				<textElement textAlignment="Right">
+					<font fontName="Constantia" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Class :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="395" y="120" width="65" height="30" uuid="c9bf32cd-a1d0-443d-a258-60b9e32c2d6e"/>
+				<textElement textAlignment="Right">
+					<font fontName="Constantia" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Caste :]]></text>
+			</staticText>
+			<image>
+				<reportElement x="10" y="20" width="80" height="80" uuid="53e0ba1a-3b34-4eee-8547-06fe8f951eb3"/>
+				<imageExpression><![CDATA["jrxml/vartakLogo.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="90" y="120" width="81" height="30" uuid="9780965f-c899-4aff-a904-5d4ca9df925b"/>
+				<textElement>
+					<font fontName="Constantia" size="13" isBold="false" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{course}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="120" width="81" height="30" uuid="4bf82854-f2eb-4d2b-81f6-78bbd58fdfbd"/>
+				<textElement>
+					<font fontName="Constantia" size="13" isBold="false" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{class}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="120" width="81" height="30" uuid="f8b80dfc-b23f-494e-bb89-4bb0a1592e32"/>
+				<textElement>
+					<font fontName="Constantia" size="13" isBold="false" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{caste}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="35" splitType="Stretch">
+			<line>
+				<reportElement x="120" y="-2" width="1" height="32" uuid="69ca5849-47e5-4200-8124-f08c1c5f651c"/>
+			</line>
+			<line>
+				<reportElement x="260" y="-1" width="1" height="31" uuid="e7abeeb0-137d-4bab-a225-d905a915143b"/>
+			</line>
+			<line>
+				<reportElement x="410" y="-2" width="1" height="33" uuid="adc51a9d-29b4-47ca-ad89-94571535156a"/>
+			</line>
+			<staticText>
+				<reportElement x="10" y="6" width="100" height="21" uuid="491a0695-5095-4edd-8c27-b2490ca35cea"/>
+				<textElement textAlignment="Center">
+					<font fontName="Constantia" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Student ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="133" y="6" width="117" height="21" uuid="16a9a0e2-2598-41c6-adb3-7582af534f88"/>
+				<textElement textAlignment="Left">
+					<font fontName="Constantia" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Student Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="6" width="90" height="21" uuid="959d8abb-4d68-4ea6-bc2f-2ffb644cbd43"/>
+				<textElement textAlignment="Center">
+					<font fontName="Constantia" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Marks]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="422" y="6" width="90" height="21" uuid="1a01a19b-869e-4ca1-994b-6a534f4eae0d"/>
+				<textElement textAlignment="Center">
+					<font fontName="Constantia" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Remarks]]></text>
+			</staticText>
+			<line>
+				<reportElement x="5" y="0" width="549" height="1" uuid="8354b803-2e88-4cb3-abfb-6c7c037f680d"/>
+			</line>
+			<line>
+				<reportElement x="5" y="30" width="549" height="1" uuid="9b02cf9e-2c9e-4632-af58-85998a599224"/>
+			</line>
+			<line>
+				<reportElement x="5" y="-2" width="550" height="1" uuid="70eb6375-51af-448b-8694-cf5ffdd52d10"/>
+			</line>
+			<line>
+				<reportElement x="5" y="28" width="549" height="1" uuid="3123ff82-9981-4fb9-a8a7-a3a99efec8b5"/>
+			</line>
+			<line>
+				<reportElement x="5" y="-2" width="1" height="32" uuid="e4134340-4425-462a-b601-9a21fefbad98"/>
+			</line>
+			<line>
+				<reportElement x="555" y="-1" width="1" height="32" uuid="5427b6e7-5931-4a61-979f-5b7f214f7dfb"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="35" splitType="Stretch">
+			<line>
+				<reportElement x="410" y="-5" width="1" height="35" uuid="2d1f9bc5-4202-403c-969e-c5585c16eca5"/>
+			</line>
+			<line>
+				<reportElement x="5" y="30" width="549" height="1" uuid="d4118287-91dc-412a-84af-018902d9e718"/>
+			</line>
+			<line>
+				<reportElement x="260" y="-5" width="1" height="35" uuid="5bd8ec0b-00c9-48e4-8924-377376b2c2da"/>
+			</line>
+			<line>
+				<reportElement x="120" y="-5" width="1" height="35" uuid="ea3f726d-5824-41d9-9559-fd70c476e3be"/>
+			</line>
+			<textField>
+				<reportElement x="20" y="5" width="80" height="20" uuid="f38ec63f-514a-4e2c-bd1a-17adadd7ae91">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4432798f-c9fc-4e09-9e3e-aa5ced071ea6"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Constantia" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="133" y="4" width="100" height="20" uuid="21726d46-7aa6-4733-ad5d-c8f8acf31bd9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a50e8d06-3cae-4ec7-9925-953d42a7a7bc"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Constantia" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="290" y="5" width="100" height="20" uuid="2a315339-6ac1-4b12-aa67-50e1bcd63036">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="068ae5d6-9775-44a9-ac3c-dea6e31a00e3"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Constantia" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{marks}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="422" y="5" width="100" height="20" uuid="d8817a05-0fe1-4e5e-bec6-bd9b44d9da18">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8d884e80-f523-47ee-acd3-a3d73f640220"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Constantia" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{remark}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="555" y="-5" width="1" height="35" uuid="85162314-f72b-4af2-abc9-744e0a4145c7"/>
+			</line>
+			<line>
+				<reportElement x="5" y="-5" width="1" height="35" uuid="b9f93193-3051-46a4-bbd6-914ecb05f963"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="50">
+			<staticText>
+				<reportElement x="397" y="15" width="140" height="20" uuid="d303c87a-e572-4acf-bd44-35147445cc88"/>
+				<textElement>
+					<font fontName="Constantia"/>
+				</textElement>
+				<text><![CDATA[Seen & Verified by   :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="15" width="30" height="20" uuid="7909d928-e0bb-4cc5-8335-9946f76e97f6"/>
+				<box rightPadding="4"/>
+				<textElement textAlignment="Left">
+					<font fontName="Constantia"/>
+				</textElement>
+				<text><![CDATA[Date:]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="50" y="15" width="140" height="20" uuid="23cd07bb-8f94-4b56-94ee-e0ee9c491355"/>
+				<textElement>
+					<font fontName="Constantia"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+</jasperReport>

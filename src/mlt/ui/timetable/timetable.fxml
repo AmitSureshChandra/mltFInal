@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane minHeight="650.0" minWidth="1100.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mlt.ui.timetable.TimetableController">
+   <center>
+      <JFXTabPane>
+         <tabs>
+            <Tab closable="false" text="View Time Table">
+               <content>
+                  <AnchorPane fx:id="panetimetable" prefHeight="467.0" prefWidth="702.0" styleClass="bg-info">
+                     <children>
+                        <AnchorPane layoutX="35.0" layoutY="23.0" minHeight="100.0" minWidth="800.0" prefHeight="121.0" prefWidth="1100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <JFXComboBox fx:id="cbcourse" labelFloat="true" layoutY="8.0" onAction="#loadClass" prefHeight="35.0" prefWidth="149.0" promptText="Course Name " AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="40.0" />
+                              <JFXComboBox fx:id="cbclass" labelFloat="true" layoutX="171.0" layoutY="8.0" prefHeight="35.0" prefWidth="114.0" promptText="Class" AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="40.0" />
+                              <JFXButton buttonType="RAISED" layoutX="682.0" layoutY="40.0" onAction="#view" prefHeight="35.0" prefWidth="109.0" ripplerFill="#1a6ee4" text="View" textFill="WHITE" AnchorPane.rightAnchor="309.0" AnchorPane.topAnchor="40.0">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="15.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="CALENDAR_CHECK_ALT" size="25" />
+                                 </graphic>
+                                 <styleClass>
+                                    <String fx:value="login-button" />
+                                    <String fx:value="btn-default" />
+                                 </styleClass>
+                              </JFXButton>
+                              <JFXButton buttonType="RAISED" layoutX="812.0" layoutY="40.0" onAction="#print" prefHeight="35.0" prefWidth="114.0" ripplerFill="#1a6ee4" text="Print" textFill="WHITE" AnchorPane.rightAnchor="174.0" AnchorPane.topAnchor="40.0">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="15.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="PRINT" size="25" />
+                                 </graphic>
+                                 <styleClass>
+                                    <String fx:value="login-button" />
+                                    <String fx:value="btn-default" />
+                                 </styleClass>
+                              </JFXButton>
+                              <JFXButton buttonType="RAISED" layoutX="946.0" layoutY="40.0" onAction="#remove" prefHeight="35.0" prefWidth="119.0" ripplerFill="#1a6ee4" text="Remove" textFill="WHITE" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="40.0">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="15.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="CALENDAR_CHECK_ALT" size="25" />
+                                 </graphic>
+                                 <styleClass>
+                                    <String fx:value="login-button" />
+                                    <String fx:value="btn-default" />
+                                 </styleClass>
+                              </JFXButton>
+                              <JFXComboBox fx:id="cbhalf" labelFloat="true" layoutX="367.0" layoutY="40.0" prefHeight="35.0" prefWidth="114.0" promptText="Select Half" AnchorPane.leftAnchor="367.0" AnchorPane.topAnchor="40.0" />
+                           </children>
+                        </AnchorPane>
+                        <TableView fx:id="tbltimetable" layoutX="134.0" layoutY="120.0" prefHeight="497.0" prefWidth="966.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="120.0">
+                           <columns>
+                            <TableColumn fx:id="coltime" minWidth="110.0" prefWidth="0.0" text="Timing" />
+                              <TableColumn fx:id="collec" minWidth="110.0" prefWidth="75.0" text="Lecture" />
+                              <TableColumn fx:id="colmon" minWidth="110.0" prefWidth="75.0" text="Monday" />
+                              <TableColumn fx:id="coltue" minWidth="110.0" prefWidth="75.0" text="Tuesday" />
+                              <TableColumn fx:id="colwed" minWidth="110.0" prefWidth="75.0" text="Wednesday" />
+                              <TableColumn fx:id="colthurs" minWidth="110.0" prefWidth="75.0" text="Thursday" />
+                              <TableColumn fx:id="colfri" minWidth="110.0" prefWidth="75.0" text="Friday" />
+                              <TableColumn fx:id="colsat" minWidth="110.0" prefWidth="75.0" text="Saturday" />
+                           </columns>
+                           <styleClass>
+                              <String fx:value="bg-success" />
+                              <String fx:value="root" />
+                           </styleClass>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+               <graphic>
+                  <FontAwesomeIconView glyphName="CALENDAR" />
+               </graphic>
+            </Tab>
+            <Tab closable="false" text="Create Time Table">
+               <content>
+                  <AnchorPane prefHeight="467.0" prefWidth="702.0" styleClass="bg-info">
+                     <children>
+                        <AnchorPane layoutX="35.0" layoutY="23.0" minHeight="100.0" minWidth="800.0" prefHeight="495.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <FlowPane alignment="CENTER" layoutX="40.0" layoutY="40.0" prefHeight="232.0" prefWidth="900.0" styleClass="bg-success" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="50.0">
+                                 <children>
+                                    <JFXComboBox fx:id="cbcourse2" labelFloat="true" onAction="#loadClass" prefHeight="35.0" prefWidth="149.0" promptText="Course Name ">
+                                       <FlowPane.margin>
+                                          <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                       </FlowPane.margin>
+                                    </JFXComboBox>
+                                    <JFXComboBox fx:id="cbclass2" labelFloat="true" prefHeight="35.0" prefWidth="189.0" promptText="Class">
+                                       <FlowPane.margin>
+                                          <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                       </FlowPane.margin>
+                                    </JFXComboBox>
+                                    <JFXComboBox fx:id="cbhalf2" labelFloat="true" layoutX="253.0" layoutY="71.0" prefHeight="35.0" prefWidth="189.0" promptText="Select Half" />
+                                    <JFXComboBox fx:id="cbnolec" labelFloat="true" prefHeight="35.0" prefWidth="223.0" promptText="No of Lecture Per Week by Teacher ">
+                                       <FlowPane.margin>
+                                          <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                       </FlowPane.margin>
+                                    </JFXComboBox>
+                                    <JFXTimePicker fx:id="tplecstart" promptText="Lecture Starting Time">
+                                       <FlowPane.margin>
+                                          <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                       </FlowPane.margin>
+                                    </JFXTimePicker>
+                                    <JFXComboBox fx:id="cblecdur" labelFloat="true" prefHeight="35.0" prefWidth="149.0" promptText="Lecture Duration(Min)">
+                                       <FlowPane.margin>
+                                          <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                       </FlowPane.margin>
+                                    </JFXComboBox>
+                                    <JFXComboBox fx:id="cbnoworkday" labelFloat="true" prefHeight="35.0" prefWidth="149.0" promptText="Working Days">
+                                       <FlowPane.margin>
+                                          <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                       </FlowPane.margin>
+                                    </JFXComboBox>
+                                    <JFXButton buttonType="RAISED" onAction="#generate" prefHeight="35.0" prefWidth="127.0" ripplerFill="#1a6ee4" text="Generate" textFill="WHITE">
+                                       <font>
+                                          <Font name="Comic Sans MS Bold" size="15.0" />
+                                       </font>
+                                       <graphic>
+                                          <FontAwesomeIconView glyphName="CALENDAR_CHECK_ALT" size="25" />
+                                       </graphic>
+                                       <styleClass>
+                                          <String fx:value="login-button" />
+                                          <String fx:value="btn-default" />
+                                       </styleClass>
+                                       <FlowPane.margin>
+                                          <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                       </FlowPane.margin>
+                                    </JFXButton>
+                                 </children>
+                              </FlowPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+               <graphic>
+                  <FontAwesomeIconView glyphName="PLUS_SQUARE" />
+               </graphic>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </center>
+</BorderPane>

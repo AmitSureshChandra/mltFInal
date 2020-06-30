@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mlt.ui.setupadmin.SetupadminController">
+   <children>
+      <BorderPane fx:id="mainborderpane">
+         <center>
+            <AnchorPane prefHeight="239.0" prefWidth="532.0" styleClass="root" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXTextField fx:id="txtuname" labelFloat="true" layoutX="121.0" layoutY="57.0" prefHeight="38.0" prefWidth="305.0" promptText="Db Username">
+                     <font>
+                        <Font name="Comic Sans MS" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXButton layoutX="192.0" layoutY="138.0" onAction="#setup" prefHeight="41.0" prefWidth="149.0" ripplerFill="#195bcd" styleClass="login-button" text="Setup" AnchorPane.bottomAnchor="60.0">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="13.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="VCARD" size="20" />
+                     </graphic>
+                  </JFXButton>
+                  <FontAwesomeIconView glyphName="USER" layoutX="87.0" layoutY="89.0" size="25" wrappingWidth="24.000000163912773" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+   <stylesheets>
+      <URL value="@../style/newStyle.css" />
+      <URL value="@../style/common.css" />
+      <URL value="@../style/style.css" />
+   </stylesheets>
+</StackPane>

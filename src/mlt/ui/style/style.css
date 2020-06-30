@@ -1,0 +1,204 @@
+*{
+
+
+    -fx-primary : #000 ;
+    -fx-secondary : #0078d7;
+    -fx-primarytext : #fff;
+    -fx-red : #cc2900;
+
+    -fx-dark : #222;
+    -fx-prompt-text-fill :  derive(-fx-primarytext,-30%);
+    -fx-yellow: #e2ba67;
+
+
+    -fx-white : #fff;
+    -fx-shadow : #2A3132;
+    -fx-stone : #336B87;
+
+
+    /* for dashboard */
+    -fx-p : #000;
+    -fx-s : #276fbf;
+    -fx-a : #a2d729;
+    -fx-p2: #222;
+    -fx-s2: #759aab;
+    -fx-text : #fff;
+
+
+}
+
+/* dashboard.fxml  */
+
+#collegelogo{
+    -fx-fill: derive(-fx-stone,-10%);
+}
+#logopane,#optionvbox,#menubar{
+    -fx-border-color: -fx-white;
+    -fx-border-radius: 1px;
+    -fx-text-fill: -fx-white;
+}
+
+.optionbutton{
+
+    -fx-font-weight: bolder;
+    -fx-font-family: "Courier New";
+    -fx-font-size: 14px;
+}
+.optionbutton:hover{
+    -fx-text-fill:-fx-white;
+    -fx-font-family: "Courier New";
+    -fx-font-size: 18px;
+}
+
+
+/*  setting.fxml */
+
+#panemenu,#panesetting,#paneuser,#panecontact{
+    -fx-background-color: -fx-primary;
+}
+#panemenu,#panesetting,#paneuser,#panecontact, #userup,#contactup,#settingup,#btnsave{
+    -fx-border-color: -fx-white;
+    -fx-border-width: 1px;
+}
+
+/*  courseInfo.fxml */
+
+#editcourseheader{
+    -fx-font-size: 25px;
+    -fx-font-weight: bolder;
+    -fx-text-fill: -fx-secondary;
+    -fx-font-family: "Courier New";
+
+}
+#hamburger{
+    -fx-background-color: derive(-fx-stone,30%);
+    -fx-border-radius: 30px;
+    -fx-background-radius: 30px;
+}
+
+/* teacher.fxml */
+
+#tblteacher,#tblsubject{
+    -fx-background-color: -fx-primary;
+}
+
+
+/* timetable.fxml */
+
+/*#tbltimetable .column-header{*/
+    /*-fx-pref-width: 110px;*/
+    /*!*-fx-max-width: 300px;*!*/
+/*}*/
+
+
+.alert{
+
+    -fx-padding: 20px;
+    -fx-text-fill: -fx-white;
+    -fx-background-color: -fx-primary;
+
+}
+
+.acentbtn{
+
+    -fx-background-color:  #ff731a;
+    -fx-text-fill: #fff;
+    -fx-font-family: "Constantia";
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.closebtn{
+    -fx-background-color:  #ff0310;
+}
+
+/*#btncheckid{*/
+/*    -fx-background-color: -fx-a;*/
+/*}*/
+
+
+
+#lblmltheader{
+    -fx-background-color: #eee;
+}
+
+#lblopening{
+    -fx-text-fill: #000;
+}
+
+
+/* for Dashboard */
+
+
+.nav
+{
+    -fx-background-color: -fx-p;
+}
+
+.h1{
+
+    -fx-font-size: 30px;
+    -fx-text-fill: -fx-text;
+}
+
+.glymph{
+
+    -fx-fill : #fbf9ff;
+}
+
+.btnnav{
+    -fx-font-size: 16px;
+    -fx-text-fill: -fx-s2;
+    -fx-font-family: "Consolas";
+}
+
+/*.btnnav:hover{*/
+/*-fx-border-color: -fx-text;*/
+/*-fx-border-width: 0px 0px 0px 0px;*/
+/*-fx-background-color: derive(-fx-p2,-80%);*/
+/*-fx-text-fill: -fx-a;*/
+/*-fx-background-radius: 0px;*/
+/*}*/
+
+.glyph-icon:hover{
+    -fx-fill: -fx-a;
+    -fx-text-fill: -fx-a;
+}
+
+
+.btnnav:pressed{
+    -fx-border-color: -fx-text;
+    -fx-border-width: 0px 0px 0px 4px;
+    /*-fx-background-color: derive(-fx-p2,5%);*/
+    -fx-text-fill: -fx-a;
+    -fx-background-radius: 0px;
+}
+
+
+
+.contentpane
+{
+    -fx-background-color: -fx-p2;
+}
+
+.onclickStyleOnNavButton{
+    /*-fx-border-color: derive(-fx-p2,10%);*/
+    /*-fx-border-width: 1px;*/
+    /*!*-fx-background-color: -fx-p2;*!*/
+    /*-fx-text-fill: -fx-a;*/
+    /*-fx-background-radius: 0px;*/
+
+    -fx-border-color: -fx-text;
+    -fx-border-width: 0px 0px 0px 4px;
+    -fx-background-color: -fx-p2;
+    -fx-text-fill: -fx-a;
+    -fx-background-radius: 0px;
+}
+
+#paneshortnav{
+    -fx-background-color: derive(-fx-p,15%);
+}
+
+.circleBorder{
+    -fx-border-color: -fx-primary;
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<?import com.jfoenix.controls.JFXTabPane?>
+<StackPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mlt.ui.login.SignupController">
+   <children>
+      <BorderPane fx:id="mainborderpane" prefHeight="470.0" prefWidth="508.0" styleClass="root">
+         <center>
+            <JFXTabPane fx:id="tabpane" BorderPane.alignment="CENTER">
+               <tabs>
+                  <Tab fx:id="tabuserinfo" closable="false" text="Enter  Details">
+                     <content>
+                        <AnchorPane prefHeight="534.0" prefWidth="748.0" styleClass="root">
+                           <children>
+                              <JFXTextField fx:id="txtuname" labelFloat="true" layoutX="159.0" layoutY="113.0" prefHeight="31.0" prefWidth="210.0" promptText="Teacher Name">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtemail" labelFloat="true" layoutX="159.0" layoutY="167.0" prefHeight="31.0" prefWidth="210.0" promptText="Email ID">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtmob" labelFloat="true" layoutX="159.0" layoutY="219.0" prefHeight="31.0" prefWidth="210.0" promptText="Mobile No">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <FontAwesomeIconView glyphName="USER_CIRCLE_ALT" layoutX="120.0" layoutY="142.0" size="25" />
+                              <FontAwesomeIconView glyphName="PHONE" layoutX="123.0" layoutY="252.0" size="25" text="" />
+                              <FontAwesomeIconView glyphName="ENVELOPE_ALT" layoutX="120.0" layoutY="195.0" size="25" />
+                              <FontAwesomeIconView glyphName="USER_PLUS" layoutX="214.0" layoutY="73.0" size="70" />
+                              <JFXButton layoutX="369.0" layoutY="362.0" onAction="#signup" prefHeight="37.0" prefWidth="108.0" ripplerFill="#195bcd" text="Finish" textFill="WHITE">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="13.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="USER_ALT" />
+                                 </graphic>
+                                 <styleClass>
+                                    <String fx:value="login-button" />
+                                    <String fx:value="btn-default" />
+                                 </styleClass>
+                              </JFXButton>
+                              <JFXButton contentDisplay="CENTER" layoutX="446.0" onAction="#login" prefHeight="35.0" prefWidth="0.0" ripplerFill="#195bcd" styleClass="btn-default" text=" " textFill="#fcfcfc">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="13.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="REMOVE" size="25" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXTextField fx:id="txtmob1" labelFloat="true" layoutX="159.0" layoutY="269.0" prefHeight="63.0" prefWidth="210.0" promptText="Address">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="14.0" />
+                                 </font>
+                              </JFXTextField>
+                              <FontAwesomeIconView glyphName="LOCK" layoutX="123.0" layoutY="312.0" size="25" text="" />
+                           </children>
+      
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </JFXTabPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

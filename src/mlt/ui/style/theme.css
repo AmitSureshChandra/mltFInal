@@ -1,0 +1,29 @@
+
+.theme1
+{
+    -fx-secondary : #0078d7;
+}
+
+.theme2{
+    -fx-secondary : #7b1cd7;
+}
+
+
+
+.theme3{
+    -fx-secondary : #1dd724;
+}
+
+
+.theme4{
+    -fx-secondary : #d7111e;
+}
+
+
+.theme5{
+    -fx-secondary : #d79811;
+}
+
+.circleBorder{
+    -fx-border-color: -fx-primary;
+}

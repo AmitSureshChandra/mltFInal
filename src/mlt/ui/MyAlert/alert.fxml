@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mlt.ui.MyAlert.AlertController">
+   <children>
+      <Label fx:id="lblmsg" alignment="CENTER" graphicTextGap="10.0" prefHeight="63.0" prefWidth="444.0" style="-fx-background-color: #000; -fx-text-fill: #ff0304;" text="Label">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="RED" glyphName="WARNING" />
+         </graphic>
+         <stylesheets>
+            <URL value="@../style/newStyle.css" />
+            <URL value="@../style/common.css" />
+            <URL value="@../style/style.css" />
+         </stylesheets>
+      </Label>
+   </children>
+</AnchorPane>

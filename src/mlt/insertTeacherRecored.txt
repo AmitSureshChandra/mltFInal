@@ -1,0 +1,16 @@
+insert into teacher values(101,"SVB","HOD","25","BscIT");
+
+insert into teacher values(102,"PN","Prof","20","BscIT");
+
+insert into teacher values(103,"GG","Prof","12","BscIT");
+
+insert into teacher values(104,"SB","Prof","4","BscIT");
+
+insert into teacher values(105,"DG","Prof","4","BscIT");
+
+insert into teacher values(106,"SM","Prof","8","BscIT");
+
+insert into teacher values(107,"SR","Prof","8","BscIT");
+
+insert into teacher values(108,"PG","Prof","8","BscIT");
+

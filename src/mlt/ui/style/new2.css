@@ -1,0 +1,856 @@
+.root {
+
+    -fx-primary : #fff ;
+    -fx-secondary : #0078d7;
+
+
+    -fx-focus-color: -fx-secondary;
+    -fx-a : #ff731a;
+    -fx-base: #fff;
+    -fx-control-inner-background: derive(-fx-base,50%);
+    -fx-control-inner-background-alt: derive(-fx-control-inner-background, 30%);
+
+    -fx-a : #ff731a;
+    -fx-primarytext : #000;
+    -fx-red : #cc2900;
+    -fx-white : #222;
+
+    -fx-dark : #fff;
+    -fx-prompt-text-fill :  derive(-fx-primarytext,-30%);
+    -fx-yellow: #e2ba67;
+
+    -fx-primarytext : #222;
+    -fx-red : #cc2900;
+
+    -fx-dark : #fff;
+    -fx-prompt-text-fill :  derive(-fx-primarytext,-30%);
+    -fx-yellow: #e2ba67;
+
+    -fx-white : #222;
+    -fx-shadow : #2A3132;
+    -fx-stone : #336B87;
+
+    /* for dashboard */
+
+    -fx-p : #fff;
+    -fx-a : #ff731a;
+    -fx-p2: #222;
+    -fx-s2: #759aab;
+    -fx-text : #222;
+
+
+
+    /**/
+
+
+
+
+
+
+
+    /*-fx-secondary: rgb(60, 179, 113);*/
+    /*-fx-focus-color: -fx-secondary;*/
+    /*-fx-a : #ff731a;*/
+    /*-fx-base: #fff;*/
+    /*-fx-control-inner-background: derive(-fx-base,50%);*/
+    /*-fx-control-inner-background-alt: derive(-fx-control-inner-background, 30%);*/
+    /*-fx-primary : #fff ;*/
+    /*-fx-secondary : rgb(60, 179, 113);*/
+    /*-fx-a : #ff731a;*/
+    /*-fx-primarytext : #000;*/
+    /*-fx-red : #cc2900;*/
+    /*-fx-white : #222;*/
+
+    /*-fx-dark : #fff;*/
+    /*-fx-prompt-text-fill :  derive(-fx-primarytext,-30%);*/
+    /*-fx-yellow: #e2ba67;*/
+
+    /*-fx-primary : #fff ;*/
+    /*-fx-secondary : rgb(60, 179, 113);*/
+    /*-fx-primarytext : #222;*/
+    /*-fx-red : #cc2900;*/
+
+    /*-fx-dark : #fff;*/
+    /*-fx-prompt-text-fill :  derive(-fx-primarytext,-30%);*/
+    /*-fx-yellow: #e2ba67;*/
+
+    /*-fx-white : #222;*/
+    /*-fx-shadow : #2A3132;*/
+    /*-fx-stone : #336B87;*/
+
+    /*!* for dashboard *!*/
+
+    /*-fx-p : #fff;*/
+    /*-fx-s : rgb(60, 179, 113);*/
+    /*-fx-a : #ff731a;*/
+    /*-fx-p2: #222;*/
+    /*-fx-s2: #759aab;*/
+    /*-fx-text : #222;*/
+
+
+}
+
+.label{
+    -fx-text-fill: #000000;
+    -fx-text-fill: -fx-white;
+
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.separator *.line {
+-fx-background-color: #3C3C3C;
+-fx-border-style: solid;
+-fx-border-width: 1px;
+}
+
+.scroll-bar{
+-fx-background-color: derive(-fx-base,45%)
+
+
+}
+
+.button:default {
+-fx-base: -fx-secondary ;
+}
+
+.table-view{
+-fx-background-color: derive(-fx-base, 10%);
+-fx-selection-bar-non-focused: derive(-fx-base, 85%);
+}
+
+.table-view .column-header .label{
+-fx-font-weight: none;
+    -fx-font-size: 14px;
+}
+
+.combo-table-view{/*optional */
+/*i only use this style when a table-view has to emulate a combo-box or auto-complete look, by making the non focused color same as the focused one*/
+-fx-selection-bar: -fx-secondary;
+-fx-selection-bar-non-focused: -fx-secondary;
+}
+
+.table-row-cell:even{
+-fx-control-inner-background: derive(-fx-base, 23%);
+}
+
+.table-row-cell:odd{
+-fx-control-inner-background: derive(-fx-base, 0%);
+}
+
+.table-row-cell:empty {
+-fx-background-color: transparent;
+}
+
+/*!*  course.fxml*!*/
+
+#glyidverify{
+-fx-text-fill:  -fx-a;
+}
+
+
+/*
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+*/
+
+
+.root{
+    -fx-background-color:  -fx-dark;
+}
+
+.glyph-icon{
+    -fx-fill:   -fx-primarytext;
+}
+.glyph-icon:hover{
+    -fx-fill: -fx-secondary;
+}
+
+.button{
+    -fx-text-fill: -fx-primarytext;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+
+/* css for login */
+
+.login-button{
+    -fx-border-color:  -fx-secondary ;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+.login-button:hover{
+    -fx-border-color:  -fx-secondary ;
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+    -fx-fill: -fx-white;
+}
+
+.login-button:hover .glyph-icon{
+    -fx-fill: -fx-a;
+}
+
+.text-field,.text-area{
+    -fx-text-fill: -fx-primarytext;
+
+    -jfx-focus-color : -fx-secondary;
+    -jfx-unfocus-color : -fx-white ;
+    -jfx-font: 1em Arial, sans-serif;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.jfx-text-field,.jfx-password-field
+{
+    -fx-prompt-text-fill :  derive(-fx-primarytext,-30%);
+}
+
+.wrong-credential{
+    -jfx-focus-color : -fx-red;
+    -jfx-unfocus-color : -fx-red;
+}
+
+
+.label_alert
+{
+    -fx-text-fill: #000;
+}
+
+/*  css for main */
+
+/* tab styling */
+
+.tab{
+    -fx-pref-width: 200px;
+    -fx-pref-height: 60px;
+    -fx-background-color:  -fx-secondary;
+    -fx-font-family: "Consolas";
+
+
+
+
+}
+
+.tab > .glymph-icon{
+    -fx-fill: -fx-primary;
+}
+
+.tab-header-background
+{
+    -fx-background-color: -fx-secondary;
+}
+
+/*
+    The tab bar
+*/
+
+.jfx-tab-pane .headers-region {
+    -fx-background-color: -fx-a;
+}
+.jfx-tab-pane .tab-header-background {
+    /*-fx-background-color: fx-a;*/
+}
+.jfx-tab-pane .tab-selected-line {
+    -fx-stroke: #75bc1b;
+    -fx-stroke-width: 3pt;
+}
+/* menu bar meritlist.style */
+
+.menu-bar
+{
+    -fx-base : -fx-primary;
+    -fx-background-color: derive(-fx-primary,7%);
+    -fx-font-family: "Consolas";
+}
+
+.context-menu
+{
+    -fx-background-color: derive(-fx-primary,30%);
+    /*  in % value : -ve to make darker and +ve to make lighter */
+}
+
+/* table styling */
+
+
+/*.table-view*/
+/*{*/
+    /*-fx-base : -fx-primary;*/
+    /*!*-fx-border-color: derive(-fx-primary,40%);*!*/
+    /*-fx-border-width: 0 0 0 1px;*/
+    /*-fx-border-color: -fx-secondary;*/
+/*}*/
+/*.table-cell*/
+/*{*/
+    /*-fx-base : -fx-primary;*/
+    /*-fx-background-color: -fx-dark ;*/
+    /*!*-fx-pref-width: 200px;*!*/
+    /*-fx-text-fill: -fx-primarytext;*/
+
+/*}*/
+.column-header
+{
+    /*-fx-base : -fx-primary;*/
+    /*-fx-pref-width: 200px;*/
+    -fx-font-family: "Consolas";
+    -fx-font-size: 16px;
+    /*-fx-text-fill: -fx-primarytext;*/
+    /*-fx-background-color: derive(-fx-secondary,40%);*/
+    /*-fx-fill: -fx-primary;*/
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: -fx-secondary;
+    -fx-font-weight: bold;
+    -fx-border: -fx-primary-text;
+    -fx-font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.list-view .label{
+    -fx-text-fill: -fx-a;
+    -fx-font-weight: bold;
+}
+
+/*#tbltimetable.column-header*/
+/*{*/
+/*    -fx-base : -fx-primary;*/
+/*    -fx-pref-width: 100px;*/
+/*    -fx-font-family: "Consolas";*/
+/*    -fx-font-size: 16px;*/
+/*    -fx-text-fill: -fx-primarytext;*/
+/*    -fx-text-fill: -fx-secondary;*/
+/*}*/
+/*#tbltimetable.table-cell{*/
+/*-fx-pref-width: 120px;*/
+/*}*/
+
+.list-tables
+{
+    -fx-background-color: -fx-dark;
+
+}
+
+
+/*.table-row-cell*/
+/*{*/
+    /*-fx-background-color: -fx-dark;*/
+    /*-fx-text-alignment: center;*/
+/*}*/
+
+/*.table-row :pressed{*/
+    /*-fx-background-color: -fx-a;*/
+    /*-fx-text-fill: -fx-secondary;*/
+/*}*/
+.table-column
+{
+    -fx-alignment: center ;
+    -fx-font-weight: bold;
+    -fx-fill: -fx-primary;
+    -fx-border-width: 1 1px;
+    -fx-border-color: derive(-fx-secondary,99%);
+}
+
+#colopt
+{
+    -fx-text-alignment: left ;
+}
+
+/* radio styling */
+
+.radio-button
+{
+    -fx-text-fill: -fx-primarytext;
+}
+
+/* for custom listing books,members and issued */
+
+.list-cell
+{
+    -fx-background-color: -fx-dark;
+    -fx-text-fill: -fx-primarytext;
+    -fx-font-family: Consolas;
+}
+/* for combobox in search tab pane */
+
+.combo-box{
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+.jfx-combo-box{
+    -jfx-focus-color: -fx-secondary;
+    -jfx-prompt-text-fill : -fx-secondary;
+
+}
+
+
+
+.jfx-combo-box .prompt-text{
+    -jfx-focus-color: -fx-secondary;
+    -jfx-prompt-text-fill : -fx-secondary;
+    -fx-fill: derive(-fx-primarytext,-30%);
+    -fx-font-size: 12px;
+}
+
+
+/* toolbox button*/
+
+.toolbutton
+{
+    -fx-font-family: "Comic Sans MS";
+    -fx-background-color:  -fx-dark;
+
+}
+
+.toolbutton:hover
+{
+    -fx-font-family: "Consolas";
+    -fx-background-color: derive(-fx-primary,-90%);
+    -fx-text-fill : -fx-white;
+    -fx-font-size: 16px;
+}
+.toolbutton:hover .glyph-icon
+{
+    -fx-fill :-fx-secondary;
+}
+/*jfxhamburger*/
+
+.jfx-hamburger-icon
+{
+    -fx-spacing: 5;
+
+}
+.jfx-hamburger-icon StackPane
+{
+    -fx-background-color: -fx-secondary;
+}
+
+#toolbar
+{
+    -fx-background-color:  -fx-dark;
+}
+
+.jfx-drawer-side-pane
+{
+    -fx-background-color:  -fx-dark;
+}
+
+#admindatalist
+{
+    -fx-text-fill:-fx-white;
+}
+
+.alert-label
+{
+
+}
+
+/*  library header */
+
+.header
+{
+    -fx-font-family: Consolas;
+    -fx-font-size: 21px;
+    -fx-text-fill: derive(-fx-white,10%);
+}
+
+
+/*
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+*/
+
+
+/* dashboard.fxml  */
+
+#collegelogo{
+    -fx-fill: derive(-fx-stone,-10%);
+}
+#logopane,#optionvbox,#menubar{
+    -fx-border-color: -fx-white;
+    -fx-border-radius: 1px;
+    -fx-text-fill: -fx-white;
+}
+
+.optionbutton{
+
+    -fx-font-weight: bolder;
+    -fx-font-family: "Courier New";
+    -fx-font-size: 14px;
+}
+.optionbutton:hover{
+    -fx-text-fill:-fx-white;
+    -fx-font-family: "Courier New";
+    -fx-font-size: 18px;
+}
+
+
+/*  setting.fxml */
+
+#panemenu,#panesetting,#paneuser,#panecontact{
+    -fx-background-color: -fx-primary;
+}
+#panemenu,#panesetting,#paneuser,#panecontact, #userup,#contactup,#settingup,#btnsave{
+    -fx-border-color: -fx-white;
+    -fx-border-width: 1px;
+}
+
+/*  courseInfo.fxml */
+
+#editcourseheader{
+    -fx-font-size: 25px;
+    -fx-font-weight: bolder;
+    -fx-text-fill: -fx-secondary;
+    -fx-font-family: "Courier New";
+
+}
+#hamburger{
+    -fx-background-color: derive(-fx-stone,30%);
+    -fx-border-radius: 30px;
+    -fx-background-radius: 30px;
+}
+
+/* teacher.fxml */
+
+#tblteacher,#tblsubject{
+    -fx-background-color: -fx-primary;
+}
+
+
+/* timetable.fxml */
+
+/*#tbltimetable .column-header{*/
+/*-fx-pref-width: 110px;*/
+/*/*-fx-max-width: 300px;*/
+/*}*/
+
+
+.alert{
+    -fx-padding: 20px;
+    -fx-text-fill: -fx-white;
+    -fx-background-color: -fx-primary;
+}
+
+.acentbtn{
+    -fx-background-color:  -fx-a;
+    -fx-text-fill: #fff;
+    -fx-font-family: "Constantia";
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.acentbtn .glymph-icon{
+    -fx-fill: -fx-primary;
+    -fx-text-fill: -fx-primary;
+}
+
+
+.closebtn{
+    -fx-background-color:  #ff0310;
+}
+
+/*#btncheckid{*/
+/*    -fx-background-color: -fx-a;*/
+/*}*/
+
+
+
+#lblmltheader{
+    -fx-background-color: #444;
+}
+
+#lblopening{
+    -fx-text-fill: #eee;
+}
+
+
+/* for Dashboard */
+
+
+.nav
+{
+    -fx-background-color: -fx-p;
+}
+
+.h1{
+    -fx-font-size: 30px;
+    -fx-text-fill: -fx-text;
+}
+
+.glymph{
+    -fx-fill : -fx-text ;
+}
+
+.btnnav{
+    -fx-font-size: 16px;
+    -fx-text-fill: -fx-text;
+    -fx-font-weight: bold;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-family: "Consolas";
+}
+
+
+
+/*.btnnav:hover{*/
+/*-fx-border-color: -fx-text;*/
+/*-fx-border-width: 0px 0px 0px 0px;*/
+/*-fx-background-color: derive(-fx-p2,-80%);*/
+/*-fx-text-fill: -fx-a;*/
+/*-fx-background-radius: 0px;*/
+/*}*/
+
+.glyph-icon:hover{
+    -fx-fill: -fx-a;
+    -fx-text-fill: -fx-a;
+}
+
+
+.btnnav:hover{
+    -fx-border-color: -fx-secondary;
+    -fx-border-width: 0px 0px 0px 4px;
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-secondary;
+    -fx-background-radius: 0px;
+}
+
+.btnnav:hover .glymph{
+
+    -fx-fill: -fx-secondary;
+
+}
+
+.onclickStyleOnNavButton .btnnav:pressed .glymph{
+    -fx-fill: -fx-text;
+}
+
+/*.onclickStyleOnNavButton .btnnav:pressed*/
+/*{*/
+    /*-fx-background-color: -fx-secondary;*/
+/*}*/
+.btnnav:pressed .glymph-icon{
+    -fx-text-fill: -fx-primary;
+}
+
+.contentpane
+{
+    -fx-background-color: -fx-p2;
+}
+
+.onclickStyleOnNavButton{
+
+    -fx-border-color: -fx-a;
+    -fx-border-width: 0px 0px 0px 4px;
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+    -fx-background-radius: 0px;
+}
+
+
+.onclickStyleOnNavButton .glymph{
+    -fx-fill: -fx-primary;
+}
+
+#paneshortnav{
+    -fx-background-color: derive(-fx-secondary,90%);
+}
+
+
+/* bootstrap */
+
+
+.b,
+.strong {
+    -fx-font-weight: bold;
+}
+
+.i,
+.em,
+.italic,
+.dfn {
+    -fx-font-style: italic;
+}
+
+.h1 {
+    -fx-font-size: 2em;
+}
+
+.small {
+    -fx-font-size: 80%;
+}
+
+.code,
+.kbd,
+.pre,
+.samp {
+    -fx-font-family: 'monospace';
+    -fx-font-size: 1em;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    -fx-text-fill: inherit;
+    -fx-fill: inherit;
+}
+.h1 small,
+.h1 .small, .h2 small,
+.h2 .small, .h3 small,
+.h3 .small, .h4 small,
+.h4 .small, .h5 small,
+.h5 .small, .h6 small,
+.h6 .small {
+    -fx-font-weight: normal;
+    -fx-text-fill: #777777;
+    -fx-fill: #777777;
+}
+
+.h1 small,
+.h1 .small,
+.h2 small,
+.h2 .small,
+.h3 small,
+.h3 .small {
+    -fx-font-size: 65%;
+}
+
+.h4 small,
+.h4 .small,
+.h5 small,
+.h5 .small,
+.h6 small,
+.h6 .small {
+    -fx-font-size: 75%;
+}
+
+.h1 {
+    -fx-font-size: 36px;
+}
+
+.h2 {
+    -fx-font-size: 30px;
+}
+
+.h3 {
+    -fx-font-size: 24px;
+}
+
+.h4 {
+    -fx-font-size: 18px;
+}
+
+.h5 {
+    -fx-font-size: 14px;
+}
+
+.h6 {
+    -fx-font-size: 12px;
+}
+
+.lead {
+    -fx-font-size: 16px;
+    -fx-font-weight: 300;
+}
+
+.small {
+    -fx-font-size: 85%;
+}
+
+
+
+.border
+{
+    -fx-border-color: -fx-secondary;
+    -fx-border-width: 1px;
+}
+
+/*.theme1*/
+/*{*/
+    /*-fx-secondary : #0078d7;*/
+/*}*/
+
+/*.theme2{*/
+    /*-fx-secondary : #7b1cd7;*/
+/*}*/
+
+
+
+/*.theme3{*/
+    /*-fx-secondary : #1dd724;*/
+/*}*/
+
+
+/*.theme4{*/
+    /*-fx-secondary : #d7111e;*/
+/*}*/
+
+
+/*.theme5{*/
+    /*-fx-secondary : #d79811;*/
+/*}*/
+
+.toggle-button{
+    -fx-text-fill: -fx-white;
+    -fx-font-family: "Constantia";
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.emerald{
+    -fx-secondary : #008A00   ;
+}
+
+
+.teal{
+    -fx-secondary : #00ABA9   ;
+}
+
+
+.blue{
+    -fx-secondary : #3E65FF	  ;
+}
+
+
+
+/*
+
+#008A00   emerald
+
+#00ABA9   teal
+
+#3E65FF	  blue
+
+
+*/
+
+.circleBorder{
+    -fx-border-color: -fx-primary;
+}

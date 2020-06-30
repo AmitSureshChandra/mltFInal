@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainborderpane" minHeight="650.0" minWidth="1100.0" prefHeight="447.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mlt.ui.adminpanel.AdminpageController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label fx:id="lblmlt" alignment="CENTER" minHeight="90.0" prefHeight="90.0" prefWidth="1100.0" text="Merit List &amp; Time Table Generator(MLT) System" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="0.0">
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="25.0" />
+                     </padding>
+                     <effect>
+                        <Glow />
+                     </effect>
+                     <styleClass>
+                        <String fx:value="header" />
+                        <String fx:value="h1" />
+                        <String fx:value="bg-info" />
+                     </styleClass>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <TableView fx:id="tblhistory" minHeight="300.0" prefHeight="560.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="90.0">
+              <columns>
+                <TableColumn fx:id="colexecutor" minWidth="150.0" prefWidth="254.0" text="Executor Name" />
+                  <TableColumn fx:id="colopt" minWidth="368.0" prefWidth="587.0000152587891" text="Operation" />
+                  <TableColumn fx:id="coldate" minWidth="150.0" prefWidth="257.0" text="Date" />
+              </columns>
+               <styleClass>
+                  <String fx:value="bg-success" />
+                  <String fx:value="root" />
+               </styleClass>
+            </TableView>
+            <JFXButton minHeight="29.0" onAction="#clear" prefHeight="35.0" prefWidth="72.0" text="Clear" AnchorPane.bottomAnchor="40.0" AnchorPane.rightAnchor="40.0">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="13.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="login-button" />
+                  <String fx:value="root" />
+               </styleClass>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

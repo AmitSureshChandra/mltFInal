@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane alignment="CENTER_LEFT" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mlt.ui.Dashboard.teacher.DashboardTeacherController">
+   <children>
+      <BorderPane fx:id="mainborderpane" minHeight="650.0" minWidth="1160.0" prefWidth="1160.0">
+         <center>
+            <AnchorPane minHeight="650.0" minWidth="800.0" prefHeight="650.0" prefWidth="800.0" styleClass="contentpane">
+               <children>
+                  <AnchorPane fx:id="panecontent" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane fx:id="panehome" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #444;" styleClass="root" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <ImageView fx:id="imghome" fitHeight="720.0" fitWidth="1366.0" layoutX="2.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                           </children>
+                        </AnchorPane>
+                        <!--<AnchorPane fx:id="panecourse" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #444;" styleClass="root" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />-->
+                        <!--<AnchorPane fx:id="paneteacher" layoutX="70.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #444;" styleClass="root" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />-->
+                        <AnchorPane fx:id="panesubject" layoutX="80.0" layoutY="20.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #444;" styleClass="root" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <AnchorPane fx:id="panetimetable" layoutX="90.0" layoutY="30.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #444;" styleClass="root" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <AnchorPane fx:id="panemeritlist" layoutX="70.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #444;" styleClass="root" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <AnchorPane fx:id="paneaccount" layoutX="80.0" layoutY="20.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #444;" styleClass="root" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <AnchorPane fx:id="panesetting" layoutX="80.0" layoutY="20.0" maxWidth="1100.0" minWidth="1100.0" prefHeight="650.0" prefWidth="1100.0" style="-fx-border-color: #444;" styleClass="root" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="paneshortnav" minHeight="650.0" minWidth="60.0" prefHeight="650.0" prefWidth="60.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <VBox layoutY="338.0" maxWidth="60.0" minWidth="0.0" prefHeight="474.0" prefWidth="152.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="126.0">
+                           <children>
+                              <JFXButton fx:id="btnaccount" alignment="BASELINE_LEFT" graphicTextGap="20.0" maxWidth="399.0" minWidth="0.0" onAction="#openAccount" prefHeight="43.0" prefWidth="399.0" ripplerFill="#1a6ee4" styleClass="btnnav" text="Account">
+                                 <padding>
+                                    <Insets bottom="10.0" left="20.0" right="10.0" top="15.0" />
+                                 </padding>
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="VCARD" size="17" styleClass="glymph" />
+                                 </graphic>
+                                 <tooltip>
+                                    <Tooltip text="Account Details" />
+                                 </tooltip>
+                              </JFXButton>
+                              <!--<JFXButton fx:id="btncourse" alignment="BASELINE_LEFT" graphicTextGap="20.0" maxWidth="383.0" minWidth="0.0" onAction="#openCourse" prefHeight="43.0" prefWidth="200.0" ripplerFill="#1a6ee4" styleClass="btnnav" text="Course">-->
+                                 <!--<VBox.margin>-->
+                                    <!--<Insets />-->
+                                 <!--</VBox.margin>-->
+                                 <!--<padding>-->
+                                    <!--<Insets bottom="10.0" left="20.0" right="10.0" top="15.0" />-->
+                                 <!--</padding>-->
+                                 <!--<graphic>-->
+                                    <!--<FontAwesomeIconView glyphName="MORTAR_BOARD" size="17" styleClass="glymph" />-->
+                                 <!--</graphic>-->
+                                 <!--<tooltip>-->
+                                    <!--<Tooltip text="Course" />-->
+                                 <!--</tooltip>-->
+                              <!--</JFXButton>-->
+                              <!--<JFXButton fx:id="btnteacher" alignment="BASELINE_LEFT" graphicTextGap="20.0" maxWidth="382.0" minWidth="0.0" onAction="#openTeacher" prefHeight="43.0" prefWidth="200.0" ripplerFill="#1a6ee4" styleClass="btnnav" text="Teacher">-->
+                                 <!--<padding>-->
+                                    <!--<Insets bottom="10.0" left="20.0" right="10.0" top="15.0" />-->
+                                 <!--</padding>-->
+                                 <!--<graphic>-->
+                                    <!--<FontAwesomeIconView glyphName="USER_ALT" size="17" styleClass="glymph" />-->
+                                 <!--</graphic>-->
+                                 <!--<tooltip>-->
+                                    <!--<Tooltip text="Teacher" />-->
+                                 <!--</tooltip>-->
+                              <!--</JFXButton>-->
+                              <JFXButton fx:id="btnsubject" alignment="BASELINE_LEFT" graphicTextGap="20.0" maxWidth="410.0" minWidth="0.0" onAction="#openSubject" prefHeight="43.0" prefWidth="200.0" ripplerFill="#1a6ee4" styleClass="btnnav" text="Subject">
+                                 <padding>
+                                    <Insets bottom="10.0" left="20.0" right="10.0" top="15.0" />
+                                 </padding>
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="CLIPBOARD" size="17" styleClass="glymph" />
+                                 </graphic>
+                                 <tooltip>
+                                    <Tooltip text="Subject" />
+                                 </tooltip>
+                              </JFXButton>
+                              <JFXButton fx:id="btnmeritlist" alignment="BASELINE_LEFT" graphicTextGap="20.0" maxWidth="400.0" minWidth="0.0" onAction="#openMeritList" prefHeight="43.0" prefWidth="400.0" ripplerFill="#1a6ee4" styleClass="btnnav" text="Merit List">
+                                 <padding>
+                                    <Insets bottom="10.0" left="20.0" right="10.0" top="15.0" />
+                                 </padding>
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="COLUMNS" size="17" styleClass="glymph" />
+                                 </graphic>
+                                 <tooltip>
+                                    <Tooltip text="Merit List" />
+                                 </tooltip>
+                              </JFXButton>
+                              <JFXButton fx:id="btntimetable" alignment="BASELINE_LEFT" graphicTextGap="20.0" maxWidth="410.0" minWidth="0.0" onAction="#openTimeTable" prefHeight="43.0" prefWidth="410.0" ripplerFill="#1a6ee4" styleClass="btnnav" text="Time Table">
+                                 <padding>
+                                    <Insets bottom="10.0" left="20.0" right="10.0" top="15.0" />
+                                 </padding>
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="CALENDAR_ALT" size="17" styleClass="glymph" />
+                                 </graphic>
+                                 <tooltip>
+                                    <Tooltip text="Time Table" />
+                                 </tooltip>
+                           </JFXButton>
+
+                           <JFXButton fx:id="btnsetting" alignment="BASELINE_LEFT" buttonType="RAISED" graphicTextGap="20.0" maxWidth="396.0" minWidth="0.0" onAction="#openSetting" prefHeight="43.0" prefWidth="396.0" ripplerFill="#1a6ee4" text="Setting">
+                                 <padding>
+                                    <Insets bottom="10.0" left="20.0" right="10.0" top="15.0" />
+                                 </padding>
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="GEARS" styleClass="glymph" />
+                                 </graphic>
+                                 <tooltip>
+                                    <Tooltip text="Settings" />
+                                 </tooltip>
+                                 <styleClass>
+                                    <String fx:value="btnnav" />
+                                    <String fx:value="b" />
+                                    <String fx:value="btn-default" />
+                                 </styleClass>
+                           </JFXButton>
+                           </children>
+                        </VBox>
+                        <AnchorPane prefHeight="61.0" prefWidth="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <children>
+                              <JFXButton minWidth="0.0" onAction="#logout" prefHeight="61.0" prefWidth="200.0" styleClass="btnnav" text="Logout" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="15.0" />
+                                 </padding>
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="SIGN_OUT" size="17" styleClass="glymph" />
+                                 </graphic>
+                                 <tooltip>
+                                    <Tooltip text="Logout" />
+                                 </tooltip>
+                              </JFXButton>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="125.0" prefWidth="236.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <JFXButton fx:id="btnhamburger" contentDisplay="CENTER" graphicTextGap="10.0" maxWidth="60.0" minWidth="60.0" onAction="#actionDrawer" prefHeight="25.0" prefWidth="60.0" text=" " AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="15.0" />
+                                 </padding>
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="BARS" size="20" styleClass="glymph" />
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                     <effect>
+                        <Glow level="0.23" />
+                     </effect>
+                     <styleClass>
+                        <String fx:value="nav" />
+                        <String fx:value="bg-danger" />
+                     </styleClass>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

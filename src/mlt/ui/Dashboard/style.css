@@ -1,0 +1,78 @@
+/**{*/
+    /*-fx-p : #000;*/
+    /*-fx-s : #276fbf;*/
+    /*-fx-a : #a2d729;*/
+    /*-fx-p2: #222;*/
+    /*-fx-s2: #759aab;*/
+    /*-fx-text : #fff;*/
+
+
+/*}*/
+/*.nav*/
+/*{*/
+    /*-fx-background-color: -fx-p;*/
+/*}*/
+
+/*.h1{*/
+
+    /*-fx-font-size: 30px;*/
+    /*-fx-text-fill: -fx-text;*/
+/*}*/
+
+/*.glymph{*/
+
+    /*-fx-fill : #fbf9ff;*/
+/*}*/
+
+/*.btnnav{*/
+    /*-fx-font-size: 16px;*/
+    /*-fx-text-fill: -fx-s2;*/
+    /*-fx-font-family: "Consolas";*/
+/*}*/
+
+/*!*.btnnav:hover{*!*/
+    /*!*-fx-border-color: -fx-text;*!*/
+    /*!*-fx-border-width: 0px 0px 0px 0px;*!*/
+    /*!*-fx-background-color: derive(-fx-p2,-80%);*!*/
+    /*!*-fx-text-fill: -fx-a;*!*/
+    /*!*-fx-background-radius: 0px;*!*/
+/*!*}*!*/
+
+/*.glyph-icon:hover{*/
+    /*-fx-fill: -fx-a;*/
+    /*-fx-text-fill: -fx-a;*/
+/*}*/
+
+
+/*.btnnav:pressed{*/
+    /*-fx-border-color: -fx-text;*/
+    /*-fx-border-width: 0px 0px 0px 4px;*/
+    /*!*-fx-background-color: derive(-fx-p2,5%);*!*/
+    /*-fx-text-fill: -fx-a;*/
+    /*-fx-background-radius: 0px;*/
+/*}*/
+
+
+
+/*.contentpane*/
+/*{*/
+    /*-fx-background-color: -fx-p2;*/
+/*}*/
+
+/*.onclickStyleOnNavButton{*/
+    /*!*-fx-border-color: derive(-fx-p2,10%);*!*/
+    /*!*-fx-border-width: 1px;*!*/
+    /*!*!*-fx-background-color: -fx-p2;*!*!*/
+    /*!*-fx-text-fill: -fx-a;*!*/
+    /*!*-fx-background-radius: 0px;*!*/
+
+    /*-fx-border-color: -fx-text;*/
+    /*-fx-border-width: 0px 0px 0px 4px;*/
+    /*-fx-background-color: -fx-p2;*/
+    /*-fx-text-fill: -fx-a;*/
+    /*-fx-background-radius: 0px;*/
+/*}*/
+
+/*#paneshortnav{*/
+   /*-fx-background-color: derive(-fx-p,15%);*/
+/*}*/

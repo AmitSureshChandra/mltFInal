@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane styleClass="bg-info" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mlt.ui.login.LoginController">
+   <children>
+      <BorderPane fx:id="mainborderpane">
+         <center>
+            <AnchorPane>
+               <children>
+                  <AnchorPane fx:id="panedbconnect" maxHeight="220.0" minHeight="220.0" prefHeight="351.0" prefWidth="534.0" styleClass="root" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <JFXTextField fx:id="txtdbuname" alignment="BASELINE_LEFT" labelFloat="true" layoutX="171.0" layoutY="107.0" prefHeight="25.0" prefWidth="223.0" promptText="Db Username" />
+                        <JFXPasswordField fx:id="txtdbpass" alignment="BASELINE_LEFT" labelFloat="true" layoutX="172.0" layoutY="172.0" prefHeight="25.0" prefWidth="224.0" promptText="Db Password" />
+                        <JFXButton graphicTextGap="10.0" layoutX="389.0" layoutY="270.0" onAction="#connect" prefHeight="30.0" prefWidth="103.0" ripplerFill="#1a6ee4" text="Connect">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="ROTATE_RIGHT" size="20" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="login-button" />
+                              <String fx:value="btn-default" />
+                           </styleClass>
+                        </JFXButton>
+                        <JFXButton contentDisplay="CENTER" graphicTextGap="10.0" layoutX="475.0" layoutY="27.0" onAction="#closeDbPanel" prefHeight="30.0" prefWidth="20.0" ripplerFill="#1a6ee4" styleClass="btn-default" text=" " AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="27.0">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="ARROW_LEFT" size="20" />
+                           </graphic>
+                        </JFXButton>
+                        <FontAwesomeIconView glyphName="USER" layoutX="139.0" layoutY="130.0" size="25" wrappingWidth="24.000000163912773" />
+                        <FontAwesomeIconView glyphName="KEY" layoutX="138.0" layoutY="194.0" size="25" text="" wrappingWidth="24.000000163912773" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="paneremotedbconnect" layoutX="50.0" layoutY="50.0" maxHeight="220.0" minHeight="220.0" prefHeight="351.0" prefWidth="534.0" styleClass="root" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <JFXTextField fx:id="txtrdbuname" alignment="BASELINE_LEFT" labelFloat="true" layoutX="120.0" layoutY="96.0" prefHeight="25.0" prefWidth="327.0" promptText="Db Username" />
+                        <JFXPasswordField fx:id="txtrdbpass" alignment="BASELINE_LEFT" labelFloat="true" layoutX="120.0" layoutY="148.0" prefHeight="25.0" prefWidth="328.0" promptText="Db Password" />
+                        <JFXButton graphicTextGap="10.0" layoutX="346.0" layoutY="281.0" onAction="#connectRemoteDb" prefHeight="30.0" prefWidth="103.0" ripplerFill="#1a6ee4" text="Connect">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="ROTATE_RIGHT" size="20" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="login-button" />
+                              <String fx:value="btn-default" />
+                           </styleClass>
+                        </JFXButton>
+                        <JFXButton contentDisplay="CENTER" graphicTextGap="10.0" layoutX="472.0" layoutY="27.0" onAction="#closeDbPanel" prefHeight="30.0" prefWidth="20.0" ripplerFill="#1a6ee4" styleClass="btn-default" text=" " AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="27.0">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="ARROW_LEFT" size="20" />
+                           </graphic>
+                        </JFXButton>
+                        <FontAwesomeIconView glyphName="USER" layoutX="88.0" layoutY="119.0" size="25" wrappingWidth="24.000000163912773" />
+                        <FontAwesomeIconView glyphName="KEY" layoutX="86.0" layoutY="170.0" size="25" text="" wrappingWidth="24.000000163912773" />
+                        <FontAwesomeIconView glyphName="KEY" layoutX="88.0" layoutY="226.0" size="25" text="" wrappingWidth="24.000000163912773" />
+                        <JFXTextField fx:id="txtdbconString" alignment="BASELINE_LEFT" labelFloat="true" layoutX="120.0" layoutY="205.0" prefHeight="25.0" prefWidth="329.0" promptText="Connection String" text="&#10;&#10;&#10;&#10;&#10;&#10;" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="paneerror" prefHeight="351.0" prefWidth="534.0" styleClass="root" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label alignment="CENTER" layoutY="56.0" prefHeight="38.0" prefWidth="534.0" text="Not Connected to Server" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                        <JFXButton graphicTextGap="10.0" layoutX="193.0" layoutY="126.0" onAction="#retry" prefHeight="30.0" prefWidth="149.0" ripplerFill="#1a6ee4" text="Retry">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="ROTATE_RIGHT" size="20" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="login-button" />
+                              <String fx:value="btn-default" />
+                           </styleClass>
+                        </JFXButton>
+                        <JFXButton graphicTextGap="10.0" layoutX="154.0" layoutY="176.0" onAction="#connectToServer" prefHeight="31.0" prefWidth="227.0" ripplerFill="#1a6ee4" text="Connect to Localhost/Server">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="ROTATE_RIGHT" size="20" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="login-button" />
+                              <String fx:value="btn-default" />
+                           </styleClass>
+                        </JFXButton>
+                        <JFXButton graphicTextGap="10.0" layoutX="154.0" layoutY="227.0" onAction="#connectToRemoteServer" prefHeight="30.0" prefWidth="226.0" ripplerFill="#1a6ee4" text="Connect to Remote Server">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="ROTATE_RIGHT" size="20" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="login-button" />
+                              <String fx:value="btn-default" />
+                           </styleClass>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="panelogin" layoutY="5.0" prefHeight="346.0" prefWidth="532.0">
+                     <children>
+                        <JFXTextField fx:id="txtuname" labelFloat="true" layoutX="121.0" layoutY="117.0" prefHeight="30.0" prefWidth="305.0" promptText="Username">
+                           <font>
+                              <Font name="Comic Sans MS" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXPasswordField fx:id="txtpassword" labelFloat="true" layoutX="120.0" layoutY="188.0" onAction="#login" prefHeight="30.0" prefWidth="201.0" promptText="Password">
+                           <font>
+                              <Font name="Comic Sans MS" size="14.0" />
+                           </font>
+                        </JFXPasswordField>
+                        <JFXButton fx:id="btnlogin" layoutX="296.0" layoutY="277.0" onAction="#login" prefHeight="41.0" prefWidth="149.0" ripplerFill="#1a6ee4" text="Login">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="USER_ALT" size="20" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="login-button" />
+                              <String fx:value="btn-default" />
+                           </styleClass>
+                        </JFXButton>
+                        <JFXButton fx:id="btnadminlogin" layoutX="94.0" layoutY="276.0" onAction="#adminLogin" prefHeight="41.0" prefWidth="149.0" ripplerFill="#1a6ee4" text="Admin Section">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="ID_BADGE" size="20" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="login-button" />
+                              <String fx:value="btn-default" />
+                           </styleClass>
+                        </JFXButton>
+                        <JFXButton fx:id="btnforget" layoutX="332.0" layoutY="184.0" onAction="#forget" prefHeight="39.0" prefWidth="108.0" ripplerFill="#1a6ee4" text="Forget">
+                           <font>
+                              <Font name="Candara Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="VCARD_ALT" size="20" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="login-button" />
+                              <String fx:value="btn-sm" />
+                              <String fx:value="btn-danger" />
+                           </styleClass>
+                        </JFXButton>
+                        <FontAwesomeIconView fx:id="glyusers" glyphName="LOCK" layoutX="233.0" layoutY="76.0" size="60" wrappingWidth="54.999998569488525" />
+                        <FontAwesomeIconView glyphName="USER" layoutX="87.0" layoutY="149.0" size="25" wrappingWidth="24.000000163912773" />
+                        <FontAwesomeIconView glyphName="KEY" layoutX="87.0" layoutY="214.0" size="25" text="" wrappingWidth="24.000000163912773" />
+                        <JFXButton fx:id="btnshowpassword" contentDisplay="CENTER" layoutX="290.0" layoutY="191.0" onAction="#showpassword" text=" ">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="EYE" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="btnshowpassword1" contentDisplay="CENTER" layoutX="290.0" layoutY="191.0" onAction="#showpassword" text=" ">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="EYE_SLASH" />
+                           </graphic>
+                        </JFXButton>
+                        <Label fx:id="lblshowpassword" layoutX="121.0" layoutY="235.0" prefHeight="17.0" prefWidth="171.0" text="Label" visible="false" />
+                        <JFXButton fx:id="btnteacherlogin" layoutX="94.0" layoutY="276.0" onAction="#teacherlogin" prefHeight="41.0" prefWidth="149.0" ripplerFill="#195bcd" styleClass="login-button" text="Users Section" visible="false">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="USERS" size="20" />
+                           </graphic>
+                        </JFXButton>
+                        <FontAwesomeIconView fx:id="glyuser" glyphName="USER_CIRCLE_ALT" layoutX="233.0" layoutY="76.0" size="60" visible="false" wrappingWidth="54.999998569488525" />
+                        <JFXToggleButton fx:id="tglblacktheme" graphicTextGap="10.0" layoutX="386.0" layoutY="-5.0" onAction="#changeWhiteTheme" prefHeight="17.0" prefWidth="148.0" size="7.0" text="Dark Mode" />
+                     </children>
+                     <styleClass>
+                        <String fx:value="root" />
+                        <String fx:value="bg-login" />
+                     </styleClass>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

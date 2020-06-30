@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.9.0.final using JasperReports Library version 6.9.0-cb8f9004be492ccc537180b49c026951f4220bf3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="tt1.1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a372503d-75c3-4c6c-8b07-3e31bd5373ed">
+	<subDataset name="Dataset1" uuid="05719ac1-18e9-440f-9773-93f50d315a23">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+	</subDataset>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="course" class="java.lang.String"/>
+	<field name="class" class="java.lang.String"/>
+	<field name="time" class="java.lang.String"/>
+	<field name="lecture" class="java.lang.String"/>
+	<field name="monday" class="java.lang.String"/>
+	<field name="tuesday" class="java.lang.String"/>
+	<field name="wednesday" class="java.lang.String"/>
+	<field name="thursday" class="java.lang.String"/>
+	<field name="friday" class="java.lang.String"/>
+	<field name="saturday" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="254" splitType="Stretch">
+			<staticText>
+				<reportElement x="121" y="20" width="300" height="35" uuid="208afd0e-3530-4db0-8c85-426d9f39371d">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Constantia" size="23" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Annasaheb Vartak College]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="121" y="55" width="205" height="15" uuid="0960ea21-e310-4953-86f6-983e12cea358"/>
+				<textElement>
+					<font fontName="Constantia"/>
+				</textElement>
+				<text><![CDATA[Vasai Road (W), Dist. Palghar - 401202.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="121" y="70" width="205" height="15" uuid="c324b3bc-df1e-45b9-a3e3-70e2c7a0369d"/>
+				<textElement>
+					<font fontName="Constantia"/>
+				</textElement>
+				<text><![CDATA[Maharashtra, India]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="121" y="85" width="205" height="15" uuid="dcf4db29-5553-4c45-87e7-6908b2a9059b"/>
+				<textElement>
+					<font fontName="Constantia"/>
+				</textElement>
+				<text><![CDATA[Contact : +91 250 2332017,info@avc.ac.in]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="530" y="0" width="31" height="20" uuid="133b1759-ec9a-40f0-a690-bde34255d0e7"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="21" y="19" width="94" height="87" uuid="e74b3247-0bfa-4560-9965-24535f46c382"/>
+				<imageExpression><![CDATA["jrxml/vartakLogo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="50" y="190" width="80" height="20" uuid="6e2533cc-1811-40ad-adc7-70161df7c81c"/>
+				<textElement textAlignment="Center">
+					<font fontName="Constantia" size="13" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Courses :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="355" y="190" width="60" height="20" uuid="ab90cf07-ae57-4b2c-87d5-b95fbb64fd8d"/>
+				<textElement textAlignment="Center">
+					<font fontName="Constantia" size="13" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Class :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="130" y="190" width="100" height="20" uuid="968f3f80-f75b-41b0-ace5-2e07acaa8379"/>
+				<textElement textAlignment="Left">
+					<font fontName="Constantia" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{course}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="415" y="190" width="100" height="20" uuid="f1f97aa4-a7f0-4ef3-b463-2b6cc8999d56"/>
+				<textElement textAlignment="Left">
+					<font fontName="Constantia" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{class}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="100" y="130" width="399" height="30" uuid="d6ac96ac-3511-467b-af5e-4e990f97e3c4"/>
+				<textElement textAlignment="Center">
+					<font fontName="Comic Sans MS" size="18" isBold="true" isItalic="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Time Table For Lecture Schedule]]></text>
+			</staticText>
+			<line>
+				<reportElement x="150" y="157" width="296" height="1" uuid="1521a336-343e-41f0-8ce1-db5f33747427"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<line>
+				<reportElement x="73" y="-2" width="1" height="32" uuid="69ca5849-47e5-4200-8124-f08c1c5f651c"/>
+			</line>
+			<line>
+				<reportElement x="143" y="-1" width="1" height="31" uuid="e7abeeb0-137d-4bab-a225-d905a915143b"/>
+			</line>
+			<line>
+				<reportElement x="382" y="-3" width="1" height="33" uuid="adc51a9d-29b4-47ca-ad89-94571535156a"/>
+			</line>
+			<staticText>
+				<reportElement x="3" y="4" width="71" height="21" uuid="491a0695-5095-4edd-8c27-b2490ca35cea"/>
+				<textElement textAlignment="Left">
+					<font fontName="Constantia" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Timing]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="83" y="4" width="50" height="21" uuid="16a9a0e2-2598-41c6-adb3-7582af534f88"/>
+				<textElement textAlignment="Left">
+					<font fontName="Constantia" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Lecture]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="153" y="4" width="60" height="21" uuid="959d8abb-4d68-4ea6-bc2f-2ffb644cbd43"/>
+				<textElement textAlignment="Left">
+					<font fontName="Constantia" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Monday]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="385" y="6" width="60" height="21" uuid="1a01a19b-869e-4ca1-994b-6a534f4eae0d"/>
+				<textElement textAlignment="Left">
+					<font fontName="Constantia" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Thursday]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-8" y="0" width="572" height="1" uuid="8354b803-2e88-4cb3-abfb-6c7c037f680d"/>
+			</line>
+			<line>
+				<reportElement x="-8" y="29" width="571" height="2" uuid="9b02cf9e-2c9e-4632-af58-85998a599224"/>
+			</line>
+			<line>
+				<reportElement x="-7" y="-2" width="571" height="1" uuid="70eb6375-51af-448b-8694-cf5ffdd52d10"/>
+			</line>
+			<line>
+				<reportElement x="-8" y="30" width="571" height="1" uuid="3123ff82-9981-4fb9-a8a7-a3a99efec8b5"/>
+			</line>
+			<line>
+				<reportElement x="563" y="-3" width="1" height="33" uuid="690a2761-d261-4d8b-8be3-1fb13408ea7e"/>
+			</line>
+			<line>
+				<reportElement x="-8" y="-3" width="1" height="32" uuid="5d78bfe4-35a7-4777-a4d9-0cf6d62eafca"/>
+			</line>
+			<staticText>
+				<reportElement x="224" y="6" width="60" height="21" uuid="386e7d49-a932-4214-bd2d-a6b58c5b3d7c"/>
+				<textElement textAlignment="Left">
+					<font fontName="Constantia" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tuesday]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="453" y="4" width="40" height="21" uuid="7e661150-7930-48d4-98ef-aede25a98290"/>
+				<textElement textAlignment="Left">
+					<font fontName="Constantia" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Friday]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="507" y="5" width="50" height="21" uuid="7190949d-101b-4e9c-ac0e-50f394aea545"/>
+				<textElement textAlignment="Left">
+					<font fontName="Constantia" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Saturday]]></text>
+			</staticText>
+			<line>
+				<reportElement x="219" y="-3" width="1" height="31" uuid="abbab262-3fbc-453e-9222-ce02405b6e5a"/>
+			</line>
+			<line>
+				<reportElement x="293" y="0" width="1" height="31" uuid="292e18a7-4d16-4fd8-9ef6-0dfccd0d03b6"/>
+			</line>
+			<staticText>
+				<reportElement x="295" y="5" width="80" height="21" uuid="fc4ed9fc-c0d8-4983-8dea-d92120150993"/>
+				<textElement textAlignment="Left">
+					<font fontName="Constantia" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Wednesday]]></text>
+			</staticText>
+			<line>
+				<reportElement x="449" y="-2" width="1" height="33" uuid="1ebc068c-bc0b-4b69-8263-e4bf0a1ca05a"/>
+			</line>
+			<line>
+				<reportElement x="503" y="-2" width="1" height="33" uuid="7a0711bb-dc6a-418b-ab78-0ab653428800"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="23" splitType="Stretch">
+			<line>
+				<reportElement x="382" y="-20" width="1" height="41" uuid="2d1f9bc5-4202-403c-969e-c5585c16eca5"/>
+			</line>
+			<line>
+				<reportElement x="-8" y="20" width="572" height="1" uuid="d4118287-91dc-412a-84af-018902d9e718"/>
+			</line>
+			<line>
+				<reportElement x="220" y="-10" width="1" height="31" uuid="5bd8ec0b-00c9-48e4-8924-377376b2c2da"/>
+			</line>
+			<line>
+				<reportElement x="73" y="-17" width="1" height="38" uuid="ea3f726d-5824-41d9-9559-fd70c476e3be"/>
+			</line>
+			<line>
+				<reportElement x="-8" y="-11" width="1" height="32" uuid="3fa0d9cc-0758-4662-8b3d-fc61623ff275"/>
+			</line>
+			<line>
+				<reportElement x="563" y="-11" width="1" height="32" uuid="13288bf5-630f-421c-85e4-cac2abc84d96"/>
+			</line>
+			<line>
+				<reportElement x="143" y="-17" width="1" height="38" uuid="04f02424-acf6-401a-907f-03bfb693890a"/>
+			</line>
+			<line>
+				<reportElement x="293" y="-19" width="1" height="40" uuid="751b9175-f05b-4294-9d51-d59a1df9aab3"/>
+			</line>
+			<line>
+				<reportElement x="503" y="-11" width="1" height="31" uuid="7bcbfb0d-7fd8-44f1-b565-ebb40b0537e0"/>
+			</line>
+			<line>
+				<reportElement x="449" y="-20" width="1" height="41" uuid="f3436f3c-e1b1-4748-a31f-2a5e14d8f0ca"/>
+			</line>
+			<textField>
+				<reportElement x="1" y="1" width="74" height="20" uuid="5dd8e845-6060-4ced-ba9a-5587f03a7d0d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e080a6e4-d6f1-4dc4-a96f-673ad88b73f2"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Comic Sans MS" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{time}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="83" y="1" width="50" height="20" uuid="6635a72d-703e-487d-932f-80d626d86dab">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="671a6e7d-1a89-4760-9e30-6fc8146ac04b"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Comic Sans MS" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{lecture}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="153" y="0" width="60" height="21" uuid="5e9ce438-4e78-4f50-9667-0eb932f4406e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="832df34e-644a-452f-957b-97465f9d53cd"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Comic Sans MS" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{monday}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="224" y="0" width="60" height="21" uuid="080465a5-efc9-4b3c-9db2-35eb4df35c2e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="46a8c424-6803-4735-96dd-90aa9f41a594"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Comic Sans MS" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tuesday}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="298" y="0" width="76" height="21" uuid="d300d54c-a122-491c-aa34-b764490de1ce">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3443726d-7a6b-4acd-95cf-bd5608481fa7"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Comic Sans MS" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{wednesday}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="385" y="0" width="60" height="21" uuid="80ec4cbc-1766-40c6-acda-5a8fcd3459a0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d2dfbc23-e63b-4d43-bd7c-a305478a7bd5"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Comic Sans MS" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{thursday}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="453" y="0" width="40" height="21" uuid="25e755b7-6e63-411b-bf06-c3e077930c78">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0089b5d3-118a-4aa8-a3bf-36816ea6062e"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Comic Sans MS" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{friday}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="508" y="1" width="50" height="19" uuid="2c48f73a-a30f-457b-b22c-19608fa364ad">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1b161bb1-d0f0-42d5-9604-8a6bdf461e23"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Comic Sans MS" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{saturday}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="57">
+			<staticText>
+				<reportElement x="371" y="19" width="90" height="20" uuid="d303c87a-e572-4acf-bd44-35147445cc88"/>
+				<text><![CDATA[Seen & Verified by  :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="19" width="47" height="20" uuid="70b0657f-d8d7-46fe-bd27-fcdf330f5bdf"/>
+				<box rightPadding="4"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[Date :]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="80" y="19" width="115" height="20" uuid="76f5a5b8-2ebb-4c1e-a787-fe608b3876e1"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+</jasperReport>

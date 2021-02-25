@@ -13,8 +13,8 @@ import java.util.Random;
 public class sendMail {
 
     public void send() throws UnsupportedEncodingException, MessagingException {
-        final String username = "akumaroooo17@gmail.com";
-        final String password ="AmitKooo77";
+        final String username = "akumaro*****@gmail.com";
+        final String password ="*********";
 
         Properties prop = new Properties();
         prop.put("mail.smtp.host","smtp.gmail.com");
@@ -32,8 +32,8 @@ public class sendMail {
 
         int otp = generateotp();
         Message m = new MimeMessage(session);
-        m.setFrom(new InternetAddress("akumaroooo17@gmail.com","MLT Generator"));
-        m.setRecipient(Message.RecipientType.TO,new InternetAddress("akumar00029@gmail.com"));
+        m.setFrom(new InternetAddress("ak*******@gmail.com","MLT Generator"));
+        m.setRecipient(Message.RecipientType.TO,new InternetAddress("a******@gmail.com"));
         m.setSubject("OTP verification for MLT Generator System");
         m.setText("OTP for verification : "+  otp +" , valid for next 5 minutes");
         Transport.send(m);
